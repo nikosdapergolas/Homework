@@ -1,0 +1,10 @@
+S:\visual_studio_projects\C#\Homework\bin\Debug\Homework.exe.config
+S:\visual_studio_projects\C#\Homework\bin\Debug\Homework.exe
+S:\visual_studio_projects\C#\Homework\bin\Debug\Homework.pdb
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.csproj.AssemblyReference.cache
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Form1.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Properties.Resources.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.csproj.GenerateResource.cache
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.csproj.CoreCompileInputs.cache
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.exe
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.pdb
