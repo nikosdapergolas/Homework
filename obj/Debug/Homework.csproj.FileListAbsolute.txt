@@ -8,3 +8,6 @@ S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.csproj.GenerateResource
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.csproj.CoreCompileInputs.cache
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.exe
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.pdb
+S:\visual_studio_projects\C#\Homework\bin\Debug\Guna.UI2.dll
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.LoginForm.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.csproj.CopyComplete
