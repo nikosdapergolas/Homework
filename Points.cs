@@ -7,6 +7,11 @@ namespace Homework
 {
     public class Points
     {
-        private int pointsOfHomework;
+        int pointsOfHomework;
+        public int PointsOfHomework
+        {
+            get { return pointsOfHomework; }
+            set { pointsOfHomework = value; }
+        }
     }
 }

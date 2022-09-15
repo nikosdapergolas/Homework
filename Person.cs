@@ -7,8 +7,24 @@ namespace Homework
 {
     public class Person
     {
-        private int name;
-        private int surname;
-        private int email;
+        string name { get; set; }
+        string surname { get; set; }
+        string email { get; set; }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        public string Surname
+        {
+            get { return surname; }
+            set { surname = value; }
+        }
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
     }
 }

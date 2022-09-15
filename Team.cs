@@ -8,7 +8,13 @@ namespace Homework
 {
     public class Team
     {
-        private int teamName;
-        ArrayList listOfStudents = new ArrayList();
+        string teamName;
+        public string TeamName
+        {
+            get { return teamName; }
+            set { teamName = value; }
+        }
+
+        public List<string> listOfStudents = new List<string>();
     }
 }   

@@ -7,11 +7,20 @@ namespace Homework
 {
     public class Admin : Person
     {
-        private int adminID;
-
-        public void createProfessor()
+        int adminID;
+        public int AdminID
         {
-            throw new System.NotImplementedException();
+            get { return adminID; }
+            set { adminID = value; }
+        }
+
+        void createProfessor(string name, string surname, string email, int id)
+        {
+            Professor professor = new Professor();
+            professor.Name = name;
+            professor.Surname = surname;
+            professor.Email = email;
+            professor.ID = id;
         }
     }
 }

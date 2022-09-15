@@ -7,12 +7,24 @@ namespace Homework
 {
     public class Homework
     {
-        private int nameOfHomework;
-        private int deadline;
-
-        public void seeHomework()
+        string nameofHomework;
+        string deadline;
+        public string NameofHomework
         {
-            throw new System.NotImplementedException();
+            get { return nameofHomework; }
+            set { nameofHomework = value; }
+        }
+        public string Deadline
+        {
+            get { return deadline; }
+            set { deadline = value; }
+        }
+
+        public Homework(string nameofHomework, string deadline)
+        {
+            this.NameofHomework = nameofHomework;
+            this.Deadline = deadline;
         }
     }
+    
 }

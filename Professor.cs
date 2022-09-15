@@ -7,16 +7,22 @@ namespace Homework
 {
     public class Professor : Person
     {
-        private int ID;
-
-        public void setPoints()
+        int id;
+        public int ID
         {
-            throw new System.NotImplementedException();
+            get { return id; }
+            set { id = value; }
         }
 
-        public void setHomework()
+        void setHomework(string nameOfHomework, string deadline)
         {
-            throw new System.NotImplementedException();
+            Homework homework = new Homework(nameOfHomework, deadline);
+        }
+
+        void setpoints(int pointsOfHomework)
+        {
+            Points points = new Points();
+            points.PointsOfHomework = pointsOfHomework;
         }
     }
 }

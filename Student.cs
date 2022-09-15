@@ -7,11 +7,19 @@ namespace Homework
 {
     public class Student : Person
     {
-        private int AM;
-
-        public void createTeam()
+        int a_m;
+        public int A_M
         {
-            throw new System.NotImplementedException();
+            get { return a_m; }
+            set { a_m = value; }
+        }
+        void createTeam(string teamName)
+        {
+            Team team = new Team();
+            team.TeamName = teamName;
+            // Μενει σε αυτο το σημείο Να βαλω ως παράμετρο τον αριθμό
+            // των ατόμων της ομάδας, και ανάλογα με αυτόν τον αριθμό, να τρέχει ένα 
+            // for loop που θα ζητάει τα ονόματα και τα ΑΜ για να τα προσθέτει
         }
     }
 }
