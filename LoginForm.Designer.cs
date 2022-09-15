@@ -219,6 +219,7 @@ namespace Homework
             this.guna2Button2.TabIndex = 8;
             this.guna2Button2.Text = "Sign Up";
             this.guna2Button2.UseTransparentBackground = true;
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2ControlBox1
             // 
