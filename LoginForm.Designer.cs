@@ -131,6 +131,7 @@ namespace Homework
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(268, 36);
             this.guna2TextBox2.TabIndex = 3;
+            this.guna2TextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox2_KeyDown);
             // 
             // guna2ToggleSwitch1
             // 
