@@ -36,7 +36,7 @@ namespace Homework
         }
 
         /// <summary>
-        /// The function is here for the student to login when the student_logging_in flag is true
+        /// The function is called every time to check if a student tries to login
         /// </summary>
         void student_login(string username, string password)
         {
@@ -86,7 +86,25 @@ namespace Homework
             conn.Close();
         }
 
+        /// <summary>
+        /// When the user presses "enter" on the keyboard after writing his password, 
+        /// then this function is calling the function that would be called if the user 
+        /// had pressed the "Login" button
+        /// </summary>
         private void guna2TextBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                guna2Button1_Click(this, new EventArgs());
+            }
+        }
+
+        /// <summary>
+        /// When the user presses "enter" on the keyboard after writing his username, 
+        /// then this function is calling the function that would be called if the user 
+        /// had pressed the "Login" button
+        /// </summary>
+        private void guna2TextBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
