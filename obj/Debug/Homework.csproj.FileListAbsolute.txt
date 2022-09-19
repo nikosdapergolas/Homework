@@ -33,3 +33,6 @@ S:\visual_studio_projects\C#\Homework\bin\Debug\EntityFramework.xml
 S:\visual_studio_projects\C#\Homework\bin\Debug\EntityFramework.SqlServer.xml
 S:\visual_studio_projects\C#\Homework\bin\Debug\System.Data.SQLite.xml
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Student_my_lessons.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Student_see_current_homework.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Student_my_team.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Student_submit_homework.resources

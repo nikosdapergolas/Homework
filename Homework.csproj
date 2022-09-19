@@ -114,6 +114,24 @@
     <Compile Include="Student_my_lessons.Designer.cs">
       <DependentUpon>Student_my_lessons.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student_my_team.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_my_team.Designer.cs">
+      <DependentUpon>Student_my_team.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_see_current_homework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_see_current_homework.Designer.cs">
+      <DependentUpon>Student_see_current_homework.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_submit_homework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_submit_homework.Designer.cs">
+      <DependentUpon>Student_submit_homework.cs</DependentUpon>
+    </Compile>
     <Compile Include="Team.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -133,6 +151,15 @@
     </Compile>
     <EmbeddedResource Include="Student_my_lessons.resx">
       <DependentUpon>Student_my_lessons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_my_team.resx">
+      <DependentUpon>Student_my_team.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_see_current_homework.resx">
+      <DependentUpon>Student_see_current_homework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_submit_homework.resx">
+      <DependentUpon>Student_submit_homework.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />

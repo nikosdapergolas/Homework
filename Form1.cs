@@ -17,7 +17,10 @@ namespace Homework
         public static bool ypobolh_ergasias_is_active = false;
         public static bool h_omada_mou_is_active = false;
 
-
+        Student_my_lessons sml;
+        Student_see_current_homework ssch;
+        Student_submit_homework ssh;
+        Student_my_team smt;
 
         void open_a_yellow_panel()
         {
@@ -67,54 +70,120 @@ namespace Homework
             button5.Image = Image.FromFile("pictures/team.png");
         }
 
+        void close_current_form_in_panel()
+        {
+            if(ta_mathimata_is_active)
+            {
+                ta_mathimata_is_active = false;
+                sml.Close();
+            }
+            else if(trexouses_ergasies_is_active)
+            {
+                trexouses_ergasies_is_active = false;
+                ssch.Close();
+            }
+            else if(ypobolh_ergasias_is_active)
+            {
+                ypobolh_ergasias_is_active = false;
+                ssh.Close();
+            }
+            else if(h_omada_mou_is_active)
+            {
+                h_omada_mou_is_active = false;
+                smt.Close();
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            // Δίνω τις κατάλληλες τιμές σε κάποια flags
+            if (ta_mathimata_is_active == false)
+            {
+                // Κλεινω την τρέχουσα α΄νοιχτή φόρμα
+                close_current_form_in_panel();
 
-            ta_mathimata_is_active = true;
-            trexouses_ergasies_is_active = false;
-            ypobolh_ergasias_is_active = false;
-            h_omada_mou_is_active = false;
-            open_a_yellow_panel(); // Κιτρινίζω το κατάλληλο πάνελ
+                // Δίνω τις κατάλληλες τιμές σε κάποια flags
 
-            // Άνοιγμα της φόρμας που ασχολείται με τα μαθήματά μου μέσα στο πάνελα της Form1
+                ta_mathimata_is_active = true;
+                trexouses_ergasies_is_active = false;
+                ypobolh_ergasias_is_active = false;
+                h_omada_mou_is_active = false;
+                open_a_yellow_panel(); // Κιτρινίζω το κατάλληλο πάνελ
 
-            Student_my_lessons sml = new Student_my_lessons() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.panel2.Controls.Add(sml);
-            sml.Show();
+                // Άνοιγμα της φόρμας που ασχολείται με τα μαθήματά μου μέσα στο πάνελ της Form1
+
+                sml = new Student_my_lessons() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                this.panel2.Controls.Add(sml);
+                sml.Show();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Δίνω τις κατάλληλες τιμές σε κάποια flags
+            if (trexouses_ergasies_is_active == false)
+            {
+                // Κλεινω την τρέχουσα α΄νοιχτή φόρμα
+                close_current_form_in_panel();
 
-            ta_mathimata_is_active = false;
-            trexouses_ergasies_is_active = true;
-            ypobolh_ergasias_is_active = false;
-            h_omada_mou_is_active = false;
-            open_a_yellow_panel(); // Κιτρινίζω το κατάλληλο πάνελ
+                // Δίνω τις κατάλληλες τιμές σε κάποια flags
+
+                ta_mathimata_is_active = false;
+                trexouses_ergasies_is_active = true;
+                ypobolh_ergasias_is_active = false;
+                h_omada_mou_is_active = false;
+                open_a_yellow_panel(); // Κιτρινίζω το κατάλληλο πάνελ
+
+                // Άνοιγμα της φόρμας που ασχολείται με τα μαθήματά μου μέσα στο πάνελ της Form1
+
+                ssch = new Student_see_current_homework() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                this.panel2.Controls.Add(ssch);
+                ssch.Show();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            // Δίνω τις κατάλληλες τιμές σε κάποια flags
+            // Κλεινω την τρέχουσα α΄νοιχτή φόρμα
+            close_current_form_in_panel();
 
-            ta_mathimata_is_active = false;
-            trexouses_ergasies_is_active = false;
-            ypobolh_ergasias_is_active = true;
-            h_omada_mou_is_active = false;
-            open_a_yellow_panel(); // Κιτρινίζω το κατάλληλο πάνελ
+            if (ypobolh_ergasias_is_active == false)
+            {
+                // Δίνω τις κατάλληλες τιμές σε κάποια flags
+
+                ta_mathimata_is_active = false;
+                trexouses_ergasies_is_active = false;
+                ypobolh_ergasias_is_active = true;
+                h_omada_mou_is_active = false;
+                open_a_yellow_panel(); // Κιτρινίζω το κατάλληλο πάνελ
+
+                // Άνοιγμα της φόρμας που ασχολείται με τα μαθήματά μου μέσα στο πάνελ της Form1
+
+                ssh = new Student_submit_homework { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                this.panel2.Controls.Add(ssh);
+                ssh.Show();
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            // Δίνω τις κατάλληλες τιμές σε κάποια flags
+            // Κλεινω την τρέχουσα α΄νοιχτή φόρμα
+            close_current_form_in_panel();
 
-            ta_mathimata_is_active = false;
-            trexouses_ergasies_is_active = false;
-            ypobolh_ergasias_is_active = false;
-            h_omada_mou_is_active = true;
-            open_a_yellow_panel(); // Κιτρινίζω το κατάλληλο πάνελ
+            if (h_omada_mou_is_active == false)
+            {
+                // Δίνω τις κατάλληλες τιμές σε κάποια flags
+
+                ta_mathimata_is_active = false;
+                trexouses_ergasies_is_active = false;
+                ypobolh_ergasias_is_active = false;
+                h_omada_mou_is_active = true;
+                open_a_yellow_panel(); // Κιτρινίζω το κατάλληλο πάνελ
+
+                // Άνοιγμα της φόρμας που ασχολείται με τα μαθήματά μου μέσα στο πάνελ της Form1
+
+                smt = new Student_my_team { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                this.panel2.Controls.Add(smt);
+                smt.Show();
+            }
         }
     }
 }
