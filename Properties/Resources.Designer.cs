@@ -63,6 +63,16 @@ namespace Homework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap classrom_filled_yelow {
+            get {
+                object obj = ResourceManager.GetObject("classrom_filled_yelow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap classrom4 {
             get {
                 object obj = ResourceManager.GetObject("classrom4", resourceCulture);
@@ -116,6 +126,16 @@ namespace Homework.Properties {
         internal static System.Drawing.Bitmap homework_picture {
             get {
                 object obj = ResourceManager.GetObject("homework_picture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap homework_yellow_2 {
+            get {
+                object obj = ResourceManager.GetObject("homework_yellow_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

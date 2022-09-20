@@ -1,0 +1,5 @@
+#304d4e  --> Side menu
+#f0d699  --> Letters in side menu
+#8a9e52  --> Main menu
+#4B7551  --> Letters in main menu
+
