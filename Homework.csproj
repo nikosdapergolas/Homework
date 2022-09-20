@@ -145,6 +145,9 @@
       <DependentUpon>Student_submit_homework.cs</DependentUpon>
     </Compile>
     <Compile Include="Team.cs" />
+    <EmbeddedResource Include="Admin_home_page.resx">
+      <DependentUpon>Admin_home_page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

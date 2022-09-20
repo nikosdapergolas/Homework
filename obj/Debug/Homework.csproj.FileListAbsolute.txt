@@ -37,3 +37,4 @@ S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Student_see_current_hom
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Student_my_team.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Student_submit_homework.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_home_page.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_home_page.resources
