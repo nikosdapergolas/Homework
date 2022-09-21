@@ -248,6 +248,12 @@
   <ItemGroup>
     <None Include="bin\Debug\pictures\exit_beige.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\exit_beige2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\homework_2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

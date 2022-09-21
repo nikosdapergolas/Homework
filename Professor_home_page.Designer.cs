@@ -35,10 +35,10 @@ namespace Homework
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -55,11 +55,11 @@ namespace Homework
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.guna2Button4);
             this.panel1.Controls.Add(this.guna2Button3);
             this.panel1.Controls.Add(this.guna2Button2);
             this.panel1.Controls.Add(this.guna2Button1);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -83,13 +83,13 @@ namespace Homework
             this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
-            this.guna2Button4.Image = global::Homework.Properties.Resources.grades;
             this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.Location = new System.Drawing.Point(0, 369);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(200, 53);
             this.guna2Button4.TabIndex = 13;
             this.guna2Button4.Text = "Βαθμολόγηση";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button3
             // 
@@ -105,13 +105,13 @@ namespace Homework
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
-            this.guna2Button3.Image = global::Homework.Properties.Resources.homework_correct;
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.Location = new System.Drawing.Point(0, 226);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(200, 53);
             this.guna2Button3.TabIndex = 12;
             this.guna2Button3.Text = "Τρέχουσες εργασίες";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button2
             // 
@@ -127,13 +127,13 @@ namespace Homework
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
-            this.guna2Button2.Image = global::Homework.Properties.Resources.set_homework;
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.Location = new System.Drawing.Point(0, 298);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(200, 53);
             this.guna2Button2.TabIndex = 11;
             this.guna2Button2.Text = "Ορισμός εργασίας";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -149,30 +149,13 @@ namespace Homework
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
-            this.guna2Button1.Image = global::Homework.Properties.Resources.classroom_beige;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.Location = new System.Drawing.Point(0, 153);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(200, 53);
             this.guna2Button1.TabIndex = 10;
             this.guna2Button1.Text = "Τα μαθήματά μου";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
-            this.button1.Image = global::Homework.Properties.Resources.exit_beige;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(31, 520);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 109);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Έξοδος";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label4
             // 
@@ -204,6 +187,23 @@ namespace Homework
             this.panel2.Size = new System.Drawing.Size(800, 650);
             this.panel2.TabIndex = 2;
             // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Homework.Properties.Resources.exit_beige2;
+            this.button1.Location = new System.Drawing.Point(31, 524);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(143, 90);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Έξοδος";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Professor_home_page
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -232,10 +232,10 @@ namespace Homework
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Button button1;
     }
 }

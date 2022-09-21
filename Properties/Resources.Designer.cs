@@ -103,9 +103,9 @@ namespace Homework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap exit_beige {
+        internal static System.Drawing.Bitmap exit_beige2 {
             get {
-                object obj = ResourceManager.GetObject("exit_beige", resourceCulture);
+                object obj = ResourceManager.GetObject("exit_beige2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,12 +133,12 @@ namespace Homework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        //internal static System.Drawing.Bitmap homework {
-        //    get {
-        //        object obj = ResourceManager.GetObject("homework", resourceCulture);
-        //        return ((System.Drawing.Bitmap)(obj));
-        //    }
-        //}
+        internal static System.Drawing.Bitmap homework_2 {
+            get {
+                object obj = ResourceManager.GetObject("homework_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
