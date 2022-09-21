@@ -12,6 +12,10 @@ namespace Homework
 {
     public partial class Professor_home_page : Form
     {
+        // Κάποια flags τα οποία κυρίως ασχολούνται στη συνέχεια
+        // με τον χρωματισμό τν κουμπιών αλλά και με το ποιά φόρμα
+        // εμφανίζεται όταν ο χρήστης πατάει κάποιο απο τα πλαινά κουμπιά
+
         public static bool ta_mathimata_mou_is_active = false;
         public static bool trexouses_ergasies_is_active = false;
         public static bool orismos_ergasias_is_active = false;
@@ -22,6 +26,11 @@ namespace Homework
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Κάθε φορά που ο χρήστης πατάει ένα κουμπί απο το αριστερά μενού,
+        /// καλείται αυτη η συνάρτηση για να χρωματίσει κατάλληλα το background
+        /// του κουμπιού ωστε να είναι πιο ευδιάκριτο στο μάτι
+        /// </summary>
         void paint_button_background()
         {
             if(ta_mathimata_mou_is_active)
@@ -86,6 +95,10 @@ namespace Homework
             }
         }
 
+        /// <summary>
+        /// Αυτό το κουμπί ασχολείται με όλα όσα γίνονται αφού ο χρήστης πατήσει
+        /// το κουμπί "Τα μαθήματά μου"
+        /// </summary>
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             // Φτιαχνω κάποια flags για το UI
@@ -99,6 +112,10 @@ namespace Homework
             paint_button_background();
         }
 
+        /// <summary>
+        /// Αυτό το κουμπί ασχολείται με όλα όσα γίνονται αφού ο χρήστης πατήσει
+        /// το κουμπί "Τρέχουσες εργασίες"
+        /// </summary>
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             // Φτιαχνω κάποια flags για το UI
@@ -112,6 +129,10 @@ namespace Homework
             paint_button_background();
         }
 
+        /// <summary>
+        /// Αυτό το κουμπί ασχολείται με όλα όσα γίνονται αφού ο χρήστης πατήσει
+        /// το κουμπί "Ορισμός εργασίας"
+        /// </summary>
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             // Φτιαχνω κάποια flags για το UI
@@ -123,8 +144,12 @@ namespace Homework
 
             // Ζωγραφίζω το background του κουμπιού
             paint_button_background();
-        }        
+        }
 
+        /// <summary>
+        /// Αυτό το κουμπί ασχολείται με όλα όσα γίνονται αφού ο χρήστης πατήσει
+        /// το κουμπί "Βαθμολόγηση"
+        /// </summary>
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             // Φτιαχνω κάποια flags για το UI
@@ -138,6 +163,10 @@ namespace Homework
             paint_button_background();
         }
 
+        /// <summary>
+        /// Αυτό το κουμπί ασχολείται με όλα όσα γίνονται αφού ο χρήστης πατήσει
+        /// το κουμπί "Έξοδος"
+        /// </summary>
         private void button1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
