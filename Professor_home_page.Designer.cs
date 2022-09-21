@@ -31,14 +31,14 @@ namespace Homework
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -68,53 +68,6 @@ namespace Homework
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 650);
             this.panel1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
-            this.button1.Image = global::Homework.Properties.Resources.exit_beige;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(31, 520);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 109);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Έξοδος";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(-4, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(227, 21);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "_______________________________";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 74);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "  Professor \r\nHome page";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 650);
-            this.panel2.TabIndex = 2;
             // 
             // guna2Button4
             // 
@@ -203,6 +156,53 @@ namespace Homework
             this.guna2Button1.Size = new System.Drawing.Size(200, 53);
             this.guna2Button1.TabIndex = 10;
             this.guna2Button1.Text = "Τα μαθήματά μου";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
+            this.button1.Image = global::Homework.Properties.Resources.exit_beige;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(31, 520);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(139, 109);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Έξοδος";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(-4, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(227, 21);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "_______________________________";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(24, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(156, 74);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "  Professor \r\nHome page";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 650);
+            this.panel2.TabIndex = 2;
             // 
             // Professor_home_page
             // 
