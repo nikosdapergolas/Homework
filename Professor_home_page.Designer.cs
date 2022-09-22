@@ -89,6 +89,7 @@ namespace Homework
             this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
+            this.guna2Button4.Image = global::Homework.Properties.Resources.grades;
             this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.Location = new System.Drawing.Point(0, 369);
             this.guna2Button4.Name = "guna2Button4";
@@ -111,6 +112,7 @@ namespace Homework
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
+            this.guna2Button3.Image = global::Homework.Properties.Resources.homework_correct;
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.Location = new System.Drawing.Point(0, 226);
             this.guna2Button3.Name = "guna2Button3";
@@ -133,6 +135,7 @@ namespace Homework
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
+            this.guna2Button2.Image = global::Homework.Properties.Resources.set_homework;
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.Location = new System.Drawing.Point(0, 298);
             this.guna2Button2.Name = "guna2Button2";
@@ -155,6 +158,7 @@ namespace Homework
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
+            this.guna2Button1.Image = global::Homework.Properties.Resources.classroom_beige;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.Location = new System.Drawing.Point(0, 153);
             this.guna2Button1.Name = "guna2Button1";
