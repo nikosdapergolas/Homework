@@ -38,3 +38,7 @@ S:\visual_studio_projects\C#\Homework\bin\Debug\System.Runtime.CompilerServices.
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.csproj.CopyComplete
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.exe
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.pdb
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_current_homework.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_grading.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_my_lessons.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_set_homework.resources
