@@ -42,3 +42,6 @@ S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_current_homew
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_grading.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_my_lessons.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_set_homework.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_delete_professor.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_professor_registering.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_show_list_of_professors.resources

@@ -89,11 +89,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs" />
+    <Compile Include="Admin_delete_professor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_delete_professor.Designer.cs">
+      <DependentUpon>Admin_delete_professor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_home_page.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin_home_page.Designer.cs">
       <DependentUpon>Admin_home_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_professor_registering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_professor_registering.Designer.cs">
+      <DependentUpon>Admin_professor_registering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_show_list_of_professors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_show_list_of_professors.Designer.cs">
+      <DependentUpon>Admin_show_list_of_professors.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -169,8 +187,17 @@
       <DependentUpon>Student_submit_homework.cs</DependentUpon>
     </Compile>
     <Compile Include="Team.cs" />
+    <EmbeddedResource Include="Admin_delete_professor.resx">
+      <DependentUpon>Admin_delete_professor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_home_page.resx">
       <DependentUpon>Admin_home_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_professor_registering.resx">
+      <DependentUpon>Admin_professor_registering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_show_list_of_professors.resx">
+      <DependentUpon>Admin_show_list_of_professors.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

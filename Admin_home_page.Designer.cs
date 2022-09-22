@@ -31,15 +31,13 @@ namespace Homework
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,22 +59,11 @@ namespace Homework
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(150)))), ((int)(((byte)(100)))));
-            this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(200, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(800, 650);
             this.panel3.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label2.Location = new System.Drawing.Point(48, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 21);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
             // 
             // label3
             // 
@@ -106,6 +93,23 @@ namespace Homework
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Homework.Properties.Resources.exit_admin_color;
+            this.button1.Location = new System.Drawing.Point(27, 517);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(143, 90);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Έξοδος";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // guna2Button3
             // 
             this.guna2Button3.Animated = true;
@@ -127,23 +131,7 @@ namespace Homework
             this.guna2Button3.Size = new System.Drawing.Size(200, 53);
             this.guna2Button3.TabIndex = 13;
             this.guna2Button3.Text = "  Διαγραφή καθηγητή";
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Homework.Properties.Resources.exit_admin_color;
-            this.button1.Location = new System.Drawing.Point(27, 517);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 90);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Έξοδος";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button2
             // 
@@ -166,6 +154,7 @@ namespace Homework
             this.guna2Button2.Size = new System.Drawing.Size(200, 53);
             this.guna2Button2.TabIndex = 12;
             this.guna2Button2.Text = "Εμφάνιση λίστας καθηγητών";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -188,6 +177,7 @@ namespace Homework
             this.guna2Button1.Size = new System.Drawing.Size(200, 53);
             this.guna2Button1.TabIndex = 11;
             this.guna2Button1.Text = "Καταχώρηση καθηγητών";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // Admin_home_page
             // 
@@ -204,8 +194,6 @@ namespace Homework
             this.Text = "Admin_home_page";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -215,7 +203,6 @@ namespace Homework
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
