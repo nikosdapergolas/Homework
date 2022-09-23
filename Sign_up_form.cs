@@ -95,5 +95,20 @@ namespace Homework
                 MessageBox.Show(exception.Message);
             }
         }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox2_MouseHover(object sender, EventArgs e)
+        {
+            richTextBox1.Visible = true;
+        }
+
+        private void guna2PictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            richTextBox1.Visible = false;
+        }
     }
 }
