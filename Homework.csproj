@@ -161,6 +161,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sign_up_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign_up_form.Designer.cs">
+      <DependentUpon>Sign_up_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student.cs" />
     <Compile Include="Student_my_lessons.cs">
       <SubType>Form</SubType>
@@ -230,6 +236,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sign_up_form.resx">
+      <DependentUpon>Sign_up_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student_my_lessons.resx">
       <DependentUpon>Student_my_lessons.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +337,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\pictures\delete_professor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\go_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\go_back_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\register_picture_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\go_back_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\info.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

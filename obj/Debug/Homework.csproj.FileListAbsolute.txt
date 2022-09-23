@@ -45,3 +45,4 @@ S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_set_homework.
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_delete_professor.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_professor_registering.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_show_list_of_professors.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Sign_up_form.resources

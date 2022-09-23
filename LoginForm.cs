@@ -32,7 +32,9 @@ namespace Homework
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            
+            Sign_up_form sign_Up_Form = new Sign_up_form(this);
+            this.Hide();
+            sign_Up_Form.Show();
         }
 
         /// <summary>
