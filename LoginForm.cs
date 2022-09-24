@@ -75,7 +75,7 @@ namespace Homework
 
                 // Πέρασμα στην καινούρια φόρμα με το προφίλ του μαθητή αυτού
                 this.Hide();
-                Form1 form1 = new Form1();
+                Form1 form1 = new Form1(this);
                 form1.Show();
             }
             else
@@ -120,7 +120,7 @@ namespace Homework
 
                 MessageBox.Show("Καλωσόρισες " + reader.GetString(1) + " " + reader.GetString(2) + "!! :)", "Το login ήταν επιτυχές!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                Professor_home_page php = new Professor_home_page();
+                Professor_home_page php = new Professor_home_page(this);
                 php.Show();
             }
             else
@@ -155,7 +155,7 @@ namespace Homework
             {
                 MessageBox.Show("Καλωσόρισες " + reader.GetString(1) + " " + reader.GetString(2) + "!! :)", "Το login ήταν επιτυχές!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                Admin_home_page ahp = new Admin_home_page();
+                Admin_home_page ahp = new Admin_home_page(this);
                 ahp.Show();
 
                 // Περνάω στο public αντικείμενο Student τις τιμές που αντιστοιχούν σε αυτόν στη βάση

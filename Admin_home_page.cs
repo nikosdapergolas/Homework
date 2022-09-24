@@ -12,6 +12,9 @@ namespace Homework
 {
     public partial class Admin_home_page : Form
     {
+        // θα το χρησιμοποιήσω για να μπορώ να γυρίσω πίσω στην Login form
+        LoginForm loginForm;
+
         // Κάποια flags τα οποία κυρίως ασχολούνται στη συνέχεια
         // με τον χρωματισμό των κουμπιών αλλά και με το ποιά φόρμα
         // εμφανίζεται όταν ο χρήστης πατάει κάποιο απο τα πλαινά κουμπιά
@@ -98,18 +101,22 @@ namespace Homework
             }
         }
 
-        public Admin_home_page()
+        public Admin_home_page(LoginForm login)
         {
             InitializeComponent();
+            // θα το χρησιμοποιήσω για να μπορώ να γυρίσω πίσω στην Login form
+            loginForm = login;
         }
 
         /// <summary>
         /// Αυτό το κουμπί ασχολείται με όλα όσα γίνονται αφού ο χρήστης πατήσει
         /// το κουμπί "Έξοδος"
+        /// Επιστρέφω στην Login form
         /// </summary>
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            loginForm.Show();
         }
 
         /// <summary>
