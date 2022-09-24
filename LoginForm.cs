@@ -205,5 +205,12 @@ namespace Homework
                 guna2Button1_Click(this, new EventArgs());
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Change_password_via_email cpve = new Change_password_via_email(this);
+            this.Enabled = false;
+            cpve.Show();
+        }
     }
 }

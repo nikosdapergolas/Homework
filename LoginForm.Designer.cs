@@ -177,6 +177,7 @@ namespace Homework
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Ξεχάσατε τον κωδικο;";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // guna2Button1
             // 

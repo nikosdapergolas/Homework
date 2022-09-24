@@ -46,3 +46,4 @@ S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_delete_professor.
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_professor_registering.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_show_list_of_professors.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Sign_up_form.resources
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Change_password_via_email.resources

@@ -116,6 +116,12 @@
     <Compile Include="Admin_show_list_of_professors.Designer.cs">
       <DependentUpon>Admin_show_list_of_professors.cs</DependentUpon>
     </Compile>
+    <Compile Include="Change_password_via_email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_password_via_email.Designer.cs">
+      <DependentUpon>Change_password_via_email.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_show_list_of_professors.resx">
       <DependentUpon>Admin_show_list_of_professors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_password_via_email.resx">
+      <DependentUpon>Change_password_via_email.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
