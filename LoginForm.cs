@@ -75,7 +75,7 @@ namespace Homework
 
                 // Πέρασμα στην καινούρια φόρμα με το προφίλ του μαθητή αυτού
                 this.Hide();
-                Form1 form1 = new Form1(this);
+                Form1 form1 = new Form1(this,student);
                 form1.Show();
             }
             else

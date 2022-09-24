@@ -12,6 +12,14 @@ namespace Homework
 {
     public partial class Form1 : Form
     {
+        // Κάθε φορά που κάποιος μαθητής κάνει login περνιούνται όλα του τα στοιχεία σε
+        // ένα αντικείμενο μέσα. Το αντικείμενο αυτό που έρχεται μέσω της συνάρτησης  
+        // που έχει αρχικοποιηθεί μέσα στην συνάρτηση που κάνει login ο Student, μέσα
+        // στην φόρμα LoginForm.cs
+        // Το αντικείμενο αυτό σε αυτή την φόρμα θα αρχικοποιηθεί μέσα στον Constructor
+        Student student;
+        
+
         // θα το χρησιμοποιήσω για να μπορώ να γυρίσω πίσω στην Login form
         LoginForm loginForm;
 
@@ -71,11 +79,13 @@ namespace Homework
             }
         }
 
-        public Form1(LoginForm login)
+        public Form1(LoginForm login, Student s)
         {
             InitializeComponent();
             // θα το χρησιμοποιήσω για να μπορώ να γυρίσω πίσω στην Login form
             loginForm = login;
+            // Πέρασα ως παράμετρω μέσω το Constructor το αντικείμενο του μαθητή που έκανε login
+            student = s;
         }
 
         /// <summary>
@@ -83,8 +93,7 @@ namespace Homework
         /// </summary>
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Close();
-            loginForm.Show();
+            Application.Exit();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -145,7 +154,7 @@ namespace Homework
 
                 // Άνοιγμα της φόρμας που ασχολείται με τα μαθήματά μου μέσα στο πάνελ της Form1
 
-                sml = new Student_my_lessons() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                sml = new Student_my_lessons(student) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 this.panel2.Controls.Add(sml);
                 sml.Show();
             }

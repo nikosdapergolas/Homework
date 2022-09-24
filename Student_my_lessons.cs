@@ -12,9 +12,17 @@ namespace Homework
 {
     public partial class Student_my_lessons : Form
     {
-        public Student_my_lessons()
+        Student student;
+
+        public Student_my_lessons(Student s)
         {
             InitializeComponent();
+            student = s;
+        }
+
+        private void Student_my_lessons_Load(object sender, EventArgs e)
+        {
+            label3.Text = student.Name;
         }
     }
 }

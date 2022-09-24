@@ -32,16 +32,17 @@ namespace Homework
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(290, 95);
+            this.label1.Location = new System.Drawing.Point(206, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 21);
+            this.label1.Size = new System.Drawing.Size(144, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Τα μαθήματά μου";
+            this.label1.Text = "Τα μαθήματά σου: ";
             // 
             // button1
             // 
@@ -61,11 +62,21 @@ namespace Homework
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(356, 82);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 21);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "label3";
+            // 
             // Student_my_lessons
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(839, 650);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -74,6 +85,7 @@ namespace Homework
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Student_my_lessons";
             this.Text = "Student_my_lessons";
+            this.Load += new System.EventHandler(this.Student_my_lessons_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,5 +96,6 @@ namespace Homework
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
