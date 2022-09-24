@@ -15,7 +15,8 @@ namespace Homework
 {
     public partial class LoginForm : Form
     {
-
+        // Αρχικοποιώ κάποια αντικείμενα για να τα περάσω μέσα στις έπόμενες φόρμες
+        // όταν κάποιος μαθητής, ή καθηγητής ή αδμιν κάνει login
         public static Student student;
         public static Professor professor;
         public static Admin admin;
@@ -30,6 +31,9 @@ namespace Homework
             student_login(guna2TextBox1.Text, guna2TextBox2.Text);
         }
 
+        /// <summary>
+        /// Καλεί την φόρμα για νακάνουν sign up οι μαθητές που επιθυμούν
+        /// </summary>
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             Sign_up_form sign_Up_Form = new Sign_up_form(this);
