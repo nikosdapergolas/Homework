@@ -12,9 +12,17 @@ namespace Homework
 {
     public partial class Admin_professor_registering : Form
     {
-        public Admin_professor_registering()
+        Admin admin;
+
+        public Admin_professor_registering(Admin a)
         {
             InitializeComponent();
+            admin = a;
+        }
+
+        private void Admin_professor_registering_Load(object sender, EventArgs e)
+        {
+            label2.Text = admin.Name;
         }
     }
 }

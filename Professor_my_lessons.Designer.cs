@@ -32,6 +32,7 @@ namespace Homework
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -39,9 +40,9 @@ namespace Homework
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(288, 223);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 21);
+            this.label1.Size = new System.Drawing.Size(153, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Τα μαθήματά μου";
+            this.label1.Text = "Τα μαθήματά μου: ";
             // 
             // button1
             // 
@@ -62,11 +63,21 @@ namespace Homework
             this.checkBox1.Text = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(447, 223);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 21);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            // 
             // Professor_my_lessons
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(158)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(800, 650);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -75,6 +86,7 @@ namespace Homework
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Professor_my_lessons";
             this.Text = "Professor_my_lessons";
+            this.Load += new System.EventHandler(this.Professor_my_lessons_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,5 +97,6 @@ namespace Homework
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

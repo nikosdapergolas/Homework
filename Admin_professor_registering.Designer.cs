@@ -31,16 +31,17 @@ namespace Homework
         {
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(157, 63);
+            this.label1.Location = new System.Drawing.Point(37, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 21);
+            this.label1.Size = new System.Drawing.Size(215, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Εγγραφή καθηγητών";
+            this.label1.Text = "Εγγραφή καθηγητών από: ";
             // 
             // button1
             // 
@@ -51,11 +52,21 @@ namespace Homework
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(268, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(14, 21);
+            this.label2.TabIndex = 2;
+            this.label2.Text = ".";
+            // 
             // Admin_professor_registering
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(150)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(800, 650);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -63,6 +74,7 @@ namespace Homework
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin_professor_registering";
             this.Text = "Admin_professor_registering";
+            this.Load += new System.EventHandler(this.Admin_professor_registering_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -72,5 +84,6 @@ namespace Homework
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -120,7 +120,7 @@ namespace Homework
 
                 MessageBox.Show("Καλωσόρισες " + reader.GetString(1) + " " + reader.GetString(2) + "!! :)", "Το login ήταν επιτυχές!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                Professor_home_page php = new Professor_home_page(this);
+                Professor_home_page php = new Professor_home_page(this,professor);
                 php.Show();
             }
             else
@@ -154,10 +154,7 @@ namespace Homework
             if (reader.Read())
             {
                 MessageBox.Show("Καλωσόρισες " + reader.GetString(1) + " " + reader.GetString(2) + "!! :)", "Το login ήταν επιτυχές!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                Admin_home_page ahp = new Admin_home_page(this);
-                ahp.Show();
-
+                
                 // Περνάω στο public αντικείμενο Student τις τιμές που αντιστοιχούν σε αυτόν στη βάση
                 // Σύμφωνα με το username και το password του
                 admin = new Admin();
@@ -166,6 +163,10 @@ namespace Homework
                 admin.Name = reader.GetString(1);
                 admin.Surname = reader.GetString(2);
                 admin.Email = reader.GetString(3);
+
+                this.Hide();
+                Admin_home_page ahp = new Admin_home_page(this, admin);
+                ahp.Show();
             }
             else
             {

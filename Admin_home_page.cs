@@ -12,6 +12,13 @@ namespace Homework
 {
     public partial class Admin_home_page : Form
     {
+        // Κάθε φορά που κάποιος αδμιν κάνει login περνιούνται όλα του τα στοιχεία σε
+        // ένα αντικείμενο μέσα. Το αντικείμενο αυτό που έρχεται μέσω της συνάρτησης  
+        // που έχει αρχικοποιηθεί μέσα στην συνάρτηση που κάνει login ο Admin, μέσα
+        // στην φόρμα LoginForm.cs
+        // Το αντικείμενο αυτό σε αυτή την φόρμα θα αρχικοποιηθεί μέσα στον Constructor
+        Admin admin;
+
         // θα το χρησιμοποιήσω για να μπορώ να γυρίσω πίσω στην Login form
         LoginForm loginForm;
 
@@ -101,11 +108,13 @@ namespace Homework
             }
         }
 
-        public Admin_home_page(LoginForm login)
+        public Admin_home_page(LoginForm login, Admin a)
         {
             InitializeComponent();
             // θα το χρησιμοποιήσω για να μπορώ να γυρίσω πίσω στην Login form
             loginForm = login;
+            // Πέρασα ως παράμετρω μέσω το Constructor το αντικείμενο του admin που έκανε login
+            admin = a;
         }
 
         /// <summary>
@@ -140,7 +149,7 @@ namespace Homework
 
                 // Άνοιγμα της φόρμας που ασχολείται με τα μαθήματά μου μέσα στο πάνελ της Form1
 
-                apr = new Admin_professor_registering() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                apr = new Admin_professor_registering(admin) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 this.panel3.Controls.Add(apr);
                 apr.Show();
             }
