@@ -14,6 +14,7 @@ namespace Homework
 {
     public partial class Sign_up_form : Form
     {
+        // θα το χρησιμοποιήσω για να μπορώ να γυρίσω πίσω στην Login form
         LoginForm loginForm;
 
         public Sign_up_form(LoginForm login)
@@ -28,9 +29,17 @@ namespace Homework
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+            // θα το χρησιμοποιήσω για να μπορώ να γυρίσω πίσω στην Login form
             loginForm.Show();
         }
 
+        /// <summary>
+        /// Αρχικα γίνονται οι έλεγχοι για το αν ο χρήστης έχει αφήσει κενό καποιο απο τα 6 πεδία.
+        /// Επίσης γίνεται έλεγχος για το αν οι 2 κωδικοί που πληκτρολόγησε ο χρήστης είναι ίδιοι.
+        /// Αν δεν υπάρχει κάποιο τέτοιο πρόβλημα, με το που ο χρήστης πατήσει submit τότε,
+        /// ανοίγω σύνδεση με τη βάση μου και περνάω τα στοιχεία του εγεγραμμένου στον αντίστοιχο πίνακα
+        /// τψν μαθητών στην βάση μου
+        /// </summary>
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             try
@@ -101,6 +110,9 @@ namespace Homework
 
         }
 
+        /// <summary>
+        /// Όταν χρήστης κάνει hover πάνω απο το info εικονίδιο, εμφανίζω ένα μήνυμα βοήθειας
+        /// </summary>
         private void guna2PictureBox2_MouseHover(object sender, EventArgs e)
         {
             richTextBox1.Visible = true;
@@ -111,6 +123,11 @@ namespace Homework
             richTextBox1.Visible = false;
         }
 
+        /// <summary>
+        /// Αν ο χρήστης πατήσει enter ενώ έχει το ποντίκι του στο τελευταίο textbox,
+        /// τότε καλείται η συνάρτηση που καλείται και όταν ο χρήστης πατήσει το 
+        /// κουμπι "submit". Είναι δηλαδή ένα 2ος τρόπος να το κάνει.
+        /// </summary>
         private void guna2TextBox6_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
