@@ -47,3 +47,7 @@ S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_professor_registe
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_show_list_of_professors.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Sign_up_form.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Change_password_via_email.resources
+S:\visual_studio_projects\C#\Homework\bin\Debug\FluentEmail.Core.dll
+S:\visual_studio_projects\C#\Homework\bin\Debug\FluentEmail.Smtp.dll
+S:\visual_studio_projects\C#\Homework\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+S:\visual_studio_projects\C#\Homework\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml

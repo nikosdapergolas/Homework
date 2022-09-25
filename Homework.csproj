@@ -46,11 +46,20 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FluentEmail.Core, Version=3.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FluentEmail.Core.3.0.2\lib\netstandard2.0\FluentEmail.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentEmail.Smtp, Version=3.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FluentEmail.Smtp.3.0.2\lib\netstandard2.0\FluentEmail.Smtp.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Data.Sqlite, Version=6.0.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Data.Sqlite.Core.6.0.9\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="SQLitePCLRaw.core, Version=2.0.6.1341, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
       <HintPath>packages\SQLitePCLRaw.core.2.0.6\lib\netstandard2.0\SQLitePCLRaw.core.dll</HintPath>
@@ -121,6 +130,12 @@
     </Compile>
     <Compile Include="Change_password_via_email.Designer.cs">
       <DependentUpon>Change_password_via_email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Email_sending_animation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Email_sending_animation.Designer.cs">
+      <DependentUpon>Email_sending_animation.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -216,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Change_password_via_email.resx">
       <DependentUpon>Change_password_via_email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Email_sending_animation.resx">
+      <DependentUpon>Email_sending_animation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
