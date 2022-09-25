@@ -390,6 +390,7 @@
     <None Include="bin\Debug\pictures\book_app_icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\pictures\send_email.png" />
     <Content Include="book_app_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

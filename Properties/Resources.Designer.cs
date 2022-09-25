@@ -293,6 +293,16 @@ namespace Homework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap send_email {
+            get {
+                object obj = ResourceManager.GetObject("send_email", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap set_homework {
             get {
                 object obj = ResourceManager.GetObject("set_homework", resourceCulture);
