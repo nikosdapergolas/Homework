@@ -52,13 +52,10 @@ namespace Homework
 
             // Σε αυτό το σημείο θα πετάξω μία φόρμα στον χρήστη με ένα loading animation στον χρήστη
             // για να φαίνεται πως το email στέλνεται εκείνη τη στιγμή στον email provider του
+            Email_sending_animation email_Sending_animation = new Email_sending_animation();
+            email_Sending_animation.Show();
 
-
-            // Αφού σταλεί το email, δείχνω ένα μήνυμα επιβεβαίωσης
-            MessageBox.Show("Ο κωδικός σας άλλαξε επιτυχώς. συνδεθείτε στο email σας για να δείτε τον καινούρια σας κωδικο"
-                , "Επιτυχής αλλαγή κωδικού"
-                , MessageBoxButtons.OK
-                , MessageBoxIcon.Information);
+            
         }
     }
 }

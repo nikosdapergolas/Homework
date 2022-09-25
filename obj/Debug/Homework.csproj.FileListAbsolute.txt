@@ -51,3 +51,4 @@ S:\visual_studio_projects\C#\Homework\bin\Debug\FluentEmail.Core.dll
 S:\visual_studio_projects\C#\Homework\bin\Debug\FluentEmail.Smtp.dll
 S:\visual_studio_projects\C#\Homework\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 S:\visual_studio_projects\C#\Homework\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Email_sending_animation.resources
