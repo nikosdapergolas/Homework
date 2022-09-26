@@ -15,6 +15,9 @@ namespace Homework
 {
     public partial class LoginForm : Form
     {
+        // Μεταβλητή που δείχνει αν θέλει ο χρήστης να φαίνεται ο κωδικός που γράφει
+        bool show_password = false;
+
         // Αρχικοποιώ κάποια αντικείμενα για να τα περάσω μέσα στις έπόμενες φόρμες
         // όταν κάποιος μαθητής, ή καθηγητής ή αδμιν κάνει login
         public static Student student;
@@ -211,6 +214,20 @@ namespace Homework
             Change_password_via_email cpve = new Change_password_via_email(this);
             this.Enabled = false;
             cpve.Show();
+        }
+
+        private void guna2ToggleSwitch1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(show_password == false)
+            {
+                show_password = true;
+                guna2TextBox2.PasswordChar = '\0';
+            }
+            else
+            {
+                show_password = false;
+                guna2TextBox2.PasswordChar = '*';
+            }
         }
 
         //public static void change_password(int new_random_password, string username_given)
