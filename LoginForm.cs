@@ -212,5 +212,35 @@ namespace Homework
             this.Enabled = false;
             cpve.Show();
         }
+
+        public static void change_password(int new_random_password, string username_given)
+        {
+            // Name of database file
+            string fileName = "HomeworkManagement.db";
+            FileInfo f = new FileInfo(fileName);
+            // Full path to it
+            string path = f.FullName;
+
+            // Connection string with relative path
+            string connectionstring = "Data Source=" + path + ";Version=3;";
+
+            //SQLiteConnection conn2 = new SQLiteConnection(connectionstring);
+            //conn2.Open();
+            // Το καινούργιο query που αλλάζει τον κωδικό του χρήστη σε αυτόν που του έδωσα
+
+            string query2 = "UPDATE Student SET password = '" + new_random_password.ToString() + "' WHERE username = '" + username_given + "';";
+            //SQLiteCommand cmd2 = new SQLiteCommand(query2, conn2);
+            //SQLiteDataReader reader2 = cmd2.ExecuteReader();
+            //conn2.Close();
+            using (SQLiteConnection conn2 = new SQLiteConnection(connectionstring))
+            {
+                conn2.Open();
+                using (SQLiteCommand cmd2 = new SQLiteCommand(query2, conn2))
+                {
+                    cmd2.ExecuteNonQuery();
+                }
+                conn2.Close();
+            }
+        }
     }
 }
