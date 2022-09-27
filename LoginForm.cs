@@ -29,6 +29,9 @@ namespace Homework
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Καλώ τη συνάρτηση για να κάνει ο Student Login
+        /// </summary>
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             student_login(guna2TextBox1.Text, guna2TextBox2.Text);
