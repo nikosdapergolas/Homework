@@ -233,6 +233,11 @@ namespace Homework
             }
         }
 
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //public static void change_password(int new_random_password, string username_given)
         //{
         //    // Name of database file

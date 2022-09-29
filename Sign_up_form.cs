@@ -76,6 +76,18 @@ namespace Homework
                     string email = guna2TextBox3.Text;
                     string username = guna2TextBox4.Text;
                     string password = guna2TextBox5.Text;
+                    string year1=gunaatext.Text;
+                    
+                        if(year1=="1"|| year1 == "2"|| year1 == "3"||year1 == "4")
+                        {
+                            
+                        }
+                        else
+                        {
+                            MessageBox.Show("error year inputted not in format '1' , '2', '3','4'");
+                            guna2Button1.Refresh();
+                        }    
+                    
 
                     // Name of database file
                     string fileName = "HomeworkManagement.db";
@@ -88,7 +100,7 @@ namespace Homework
 
                     SQLiteConnection conn = new SQLiteConnection(connectionstring);
                     conn.Open();
-                    string query1 = "INSERT INTO Student(name,surname,email,username,password) VALUES ('" + name + "','" + surname + "','" + email + "','" + username + "','" + password + "');";
+                    string query1 = "INSERT INTO Student(name,surname,email,username,password) VALUES ('" + name + "','" + surname + "','" + email + "','" + username + "','" + password + "','"+year1+"');";
                     SQLiteCommand cmd = new SQLiteCommand(query1, conn);
                     SQLiteDataReader reader = cmd.ExecuteReader();
 
@@ -134,6 +146,11 @@ namespace Homework
             {
                 guna2Button1_Click(this, new EventArgs());
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

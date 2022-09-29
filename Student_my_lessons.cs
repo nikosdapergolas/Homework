@@ -27,19 +27,19 @@ namespace Homework
             label3.Text = student.Name;
             if (student.Year = 1)
             {
-                guna2PictureBox1
+                guna2PictureBox1.Visible = true;
             }
             else if (student.Year = 2)
             {
-
+                guna2PictureBox2.Visible = true;
             }
             else if (student.Year = 3)
             {
-
+                guna2PictureBox3.Visible = true;
             }
             else if (student.Year = 4)
             {
-
+                guna2PictureBox4.Visible = true;
             }
         }
     }
