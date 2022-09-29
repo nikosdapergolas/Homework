@@ -217,7 +217,7 @@ namespace Homework
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.Location = new System.Drawing.Point(159, 449);
+            this.guna2Button2.Location = new System.Drawing.Point(162, 449);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(107, 46);
             this.guna2Button2.TabIndex = 8;
