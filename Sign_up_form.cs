@@ -100,7 +100,7 @@ namespace Homework
 
                     SQLiteConnection conn = new SQLiteConnection(connectionstring);
                     conn.Open();
-                    string query1 = "INSERT INTO Student(name,surname,email,username,password) VALUES ('" + name + "','" + surname + "','" + email + "','" + username + "','" + password + "','"+year1+"');";
+                    string query1 = "INSERT INTO Student(name,surname,email,username,password,year) VALUES ('" + name + "','" + surname + "','" + email + "','" + username + "','" + password + "','"+year1+"');";
                     SQLiteCommand cmd = new SQLiteCommand(query1, conn);
                     SQLiteDataReader reader = cmd.ExecuteReader();
 
