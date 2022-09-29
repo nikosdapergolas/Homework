@@ -191,24 +191,48 @@ namespace Homework
 
             SQLiteConnection conn = new SQLiteConnection(connectionstring);
             conn.Open();
+            System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
             string c_name_of_classDB = c_name.Text;
             string num_of_ex_classDB = numofex.Text;
             string num_of_pers_clasDB= numofpers.Text;
             string num_of_teams_classDB=numofteam.Text;
-            string name_of_exerc = textname.Text;
+            string name_of_exe_classDB = textname.Text;
+            //string name_of_file_classDB=
 
 
 
 
-            System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
+           
 
-            com.CommandText = "Insert into";
-            com.ExecuteNonQuery();
+            com.CommandText = "Insert into Class values ('"+c_name_of_classDB+ "','"+num_of_ex_classDB+ "','"+num_of_pers_clasDB+ "','"+num_of_teams_classDB+ "','"+name_of_exe_classDB+"');";
+
+            
+            try
+            {
+
+                SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
+                SQLiteDataReader reader = cmd.ExecuteReader();
+                com.ExecuteNonQuery();
+
+                conn.Close();
+                MessageBox.Show("Καταχωρηθηκαν εργασίες τάξης", "ΟΚ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            }
+            
+        
+            catch (Exception exception)
+            {
+                // Default error message
+                MessageBox.Show("ERROR: Πιθανόν βάλατε ήδη υπάρχουσα τάξη");
+            }
+
+                conn.Close();
+
+
+
 
 
             
-
-            conn.Close();
         }
     }
 }
