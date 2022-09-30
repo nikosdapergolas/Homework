@@ -16,6 +16,7 @@ namespace Homework
     public partial class Professor_set_homework : Form
     {
         string fileToCopy;
+        string bob;
         string destinationDirectory;
         public Professor_set_homework()
         {
@@ -88,9 +89,14 @@ namespace Homework
             dialog.Multiselect = false; // deny user to upload more than one file at a time
             if (dialog.ShowDialog() == DialogResult.OK) // if user clicked OK
             {
+                bob = dialog.FileName;
                 // Get path of file
                 String path = dialog.FileName;
                 fileToCopy = path;
+
+                string filenamex = Path.GetFileName(bob);
+                bob = filenamex;
+
                 // Change the file shown in the rich textbox
                 richTextBox1.Text = path;
             }
@@ -98,6 +104,8 @@ namespace Homework
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            
+
             //*******************************************************************************
             // Ανάλογα με το ποιός ανεβάζει και τι, μόνο αυτό το σημείο του κώδικα θα αλλάζει
             string fileName = "professor_upload_a_new_homework"; // Το αρχείο στο οποίο αποθηκεύουμε τα "τάδε" πράγματα στο bin/debug
@@ -111,10 +119,12 @@ namespace Homework
                 // that has all the other files like it
                 File.Copy(fileToCopy, destinationDirectory + "/" + Path.GetFileName(fileToCopy));
                 // Μήνυμα επιτυχίας
+                
                 MessageBox.Show("Το αρχείο ανέβηκε επιτυχώς!"
                     , "Επιτυχία!"
                     , MessageBoxButtons.OK
-                    , MessageBoxIcon.Information);
+                    , MessageBoxIcon.Information
+                    );
             }
             catch
             {
@@ -126,18 +136,6 @@ namespace Homework
                     , MessageBoxIcon.Error);
             }
 
-
-
-
-
-
-
-
-
-
-
-
-
             string fileName1 = "HomeworkManagement.db";
             FileInfo f1 = new FileInfo(fileName1);
             // Full path to it
@@ -148,16 +146,55 @@ namespace Homework
 
             SQLiteConnection conn = new SQLiteConnection(connectionstring);
             conn.Open();
-            string c_name_of_classDB = c_name.Text;
-            string num_of_ex_classDB = numofex.Text;
-            string num_of_pers_clasDB = numofpers.Text;
-            string num_of_teams_classDB = numofteam.Text;
-            string name_of_exerc = textname.Text;
-
             System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
+            string homeworkid= IDtxt.Text;
+            string nameofHW = hwname.Text;
+            string deadline= deadliner.Text;
+            string file_name= bob;
+            string visibility = visi.Text;
+            string subject1 = subject.Text;
+            string max_grade=maxvathmos.Text;   
+            string yearboy=class_name.Text;
+            
 
-            com.CommandText = "update Homework_Board set visibility='yes' where homeworkID =";
-            com.ExecuteNonQuery();
+
+
+
+
+
+            com.CommandText = "Insert into Homework_Board values ('" + IDtxt.Text + "','" + hwname.Text + "','" + deadliner.Text + "','" + bob + "','" + visi.Text + "','" + subject1 + "','"+max_grade+"','"+yearboy+"');";
+
+            
+            try
+            {
+
+                SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
+                SQLiteDataReader reader = cmd.ExecuteReader();
+                
+                
+                conn.Close();
+                MessageBox.Show("Καταχωρηθηκαν εργασίες ", "ΟΚ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch(Exception ex)
+            {
+                // Default error message
+                MessageBox.Show(ex.Message);conn.Close();
+            }
+
+            
+
+
+
+
+
+
+
+
+
+
+
+            
 
         }
 
