@@ -78,15 +78,15 @@ namespace Homework
                     string password = guna2TextBox5.Text;
                     string year1=gunaatext.Text;
                     
-                        if(year1=="1"|| year1 == "2"|| year1 == "3"||year1 == "4")
-                        {
+                    if(year1=="1"|| year1 == "2"|| year1 == "3"||year1 == "4")
+                    {
                             
-                        }
-                        else
-                        {
-                            MessageBox.Show("error year inputted not in format '1' , '2', '3','4'");
-                            guna2Button1.Refresh();
-                        }    
+                    }
+                    else
+                    {
+                        MessageBox.Show("error year inputted not in format '1' , '2', '3','4'");
+                        guna2Button1.Refresh();
+                    }    
                     
 
                     // Name of database file
