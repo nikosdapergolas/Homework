@@ -89,10 +89,14 @@ namespace Homework
             dialog.Multiselect = false; // deny user to upload more than one file at a time
             if (dialog.ShowDialog() == DialogResult.OK) // if user clicked OK
             {
+                bob = dialog.FileName;
                 // Get path of file
                 String path = dialog.FileName;
                 fileToCopy = path;
-                bob = path;
+
+                string filenamex = Path.GetFileName(bob);
+                bob = filenamex;
+
                 // Change the file shown in the rich textbox
                 richTextBox1.Text = path;
             }
@@ -151,7 +155,7 @@ namespace Homework
             string subject1 = subject.Text;
             string max_grade=maxvathmos.Text;   
             string yearboy=class_name.Text;
-
+            
 
 
 
@@ -160,27 +164,25 @@ namespace Homework
 
             com.CommandText = "Insert into Homework_Board values ('" + IDtxt.Text + "','" + hwname.Text + "','" + deadliner.Text + "','" + bob + "','" + visi.Text + "','" + subject1 + "','"+max_grade+"','"+yearboy+"');";
 
-
+            
             try
             {
 
                 SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
                 SQLiteDataReader reader = cmd.ExecuteReader();
-                com.ExecuteNonQuery();
-
+                
+                
                 conn.Close();
                 MessageBox.Show("Καταχωρηθηκαν εργασίες ", "ΟΚ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
-
-
-            catch (Exception exception)
+            catch(Exception ex)
             {
                 // Default error message
-                MessageBox.Show("ERROR");
+                MessageBox.Show(ex.Message);conn.Close();
             }
 
-            conn.Close();
+            
 
 
 
