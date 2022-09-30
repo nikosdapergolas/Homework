@@ -24,7 +24,7 @@ namespace Homework
 
         private void Student_my_lessons_Load(object sender, EventArgs e)
         {
-            label3.Text = student.Name;
+            /*label3.Text = student.Name;
             if (student.Year = 1)
             {
                 guna2PictureBox1.Visible = true;
@@ -40,7 +40,7 @@ namespace Homework
             else if (student.Year = 4)
             {
                 guna2PictureBox4.Visible = true;
-            }
+            }*/
         }
     }
 }
