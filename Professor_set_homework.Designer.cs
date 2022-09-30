@@ -288,6 +288,7 @@ namespace Homework
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(414, 635);
             this.guna2Panel2.TabIndex = 12;
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // panel1
             // 
@@ -350,6 +351,7 @@ namespace Homework
             this.label14.Size = new System.Drawing.Size(163, 21);
             this.label14.TabIndex = 18;
             this.label14.Text = "Ωρατότητα(yes/no)";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // visi
             // 
@@ -369,6 +371,7 @@ namespace Homework
             this.visi.SelectedText = "";
             this.visi.Size = new System.Drawing.Size(148, 21);
             this.visi.TabIndex = 17;
+            this.visi.TextChanged += new System.EventHandler(this.visi_TextChanged);
             // 
             // label12
             // 
@@ -378,6 +381,7 @@ namespace Homework
             this.label12.Size = new System.Drawing.Size(27, 21);
             this.label12.TabIndex = 14;
             this.label12.Text = "ID";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // IDtxt
             // 
@@ -397,6 +401,7 @@ namespace Homework
             this.IDtxt.SelectedText = "";
             this.IDtxt.Size = new System.Drawing.Size(148, 21);
             this.IDtxt.TabIndex = 13;
+            this.IDtxt.TextChanged += new System.EventHandler(this.IDtxt_TextChanged);
             // 
             // label11
             // 
@@ -406,6 +411,7 @@ namespace Homework
             this.label11.Size = new System.Drawing.Size(140, 21);
             this.label11.TabIndex = 12;
             this.label11.Text = "Όνομα εργασίας ";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // hwname
             // 
@@ -425,6 +431,7 @@ namespace Homework
             this.hwname.SelectedText = "";
             this.hwname.Size = new System.Drawing.Size(148, 21);
             this.hwname.TabIndex = 11;
+            this.hwname.TextChanged += new System.EventHandler(this.hwname_TextChanged);
             // 
             // label6
             // 
@@ -459,6 +466,7 @@ namespace Homework
             this.label7.Size = new System.Drawing.Size(43, 21);
             this.label7.TabIndex = 10;
             this.label7.Text = "Max";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // class_name
             // 
@@ -478,6 +486,7 @@ namespace Homework
             this.class_name.SelectedText = "";
             this.class_name.Size = new System.Drawing.Size(129, 19);
             this.class_name.TabIndex = 1;
+            this.class_name.TextChanged += new System.EventHandler(this.class_name_TextChanged);
             // 
             // maxvathmos
             // 
@@ -497,6 +506,7 @@ namespace Homework
             this.maxvathmos.SelectedText = "";
             this.maxvathmos.Size = new System.Drawing.Size(148, 21);
             this.maxvathmos.TabIndex = 9;
+            this.maxvathmos.TextChanged += new System.EventHandler(this.maxvathmos_TextChanged);
             // 
             // label8
             // 
@@ -506,6 +516,7 @@ namespace Homework
             this.label8.Size = new System.Drawing.Size(123, 21);
             this.label8.TabIndex = 4;
             this.label8.Text = "Ορισμός Τάξης";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
@@ -515,6 +526,7 @@ namespace Homework
             this.label9.Size = new System.Drawing.Size(77, 21);
             this.label9.TabIndex = 8;
             this.label9.Text = "deadline";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // subject
             // 
@@ -534,6 +546,7 @@ namespace Homework
             this.subject.SelectedText = "";
             this.subject.Size = new System.Drawing.Size(129, 23);
             this.subject.TabIndex = 5;
+            this.subject.TextChanged += new System.EventHandler(this.subject_TextChanged);
             // 
             // deadliner
             // 
@@ -553,6 +566,7 @@ namespace Homework
             this.deadliner.SelectedText = "";
             this.deadliner.Size = new System.Drawing.Size(129, 22);
             this.deadliner.TabIndex = 7;
+            this.deadliner.TextChanged += new System.EventHandler(this.deadliner_TextChanged);
             // 
             // label10
             // 
@@ -562,6 +576,7 @@ namespace Homework
             this.label10.Size = new System.Drawing.Size(75, 21);
             this.label10.TabIndex = 6;
             this.label10.Text = "Μάθημα";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // Professor_set_homework
             // 
@@ -575,6 +590,7 @@ namespace Homework
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Professor_set_homework";
             this.Text = "Professor_set_homework";
+            this.Load += new System.EventHandler(this.Professor_set_homework_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
