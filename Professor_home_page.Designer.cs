@@ -96,7 +96,7 @@ namespace Homework
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(200, 53);
             this.guna2Button4.TabIndex = 13;
-            this.guna2Button4.Text = "Βαθμολόγηση";
+            this.guna2Button4.Text = "Βαθμολόγηση και πρόοδος";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button3
@@ -165,7 +165,7 @@ namespace Homework
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(200, 53);
             this.guna2Button1.TabIndex = 10;
-            this.guna2Button1.Text = "Τα μαθήματά μου";
+            this.guna2Button1.Text = "Όλες οι Εργασίες ";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label4
