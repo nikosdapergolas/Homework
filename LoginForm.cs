@@ -233,11 +233,17 @@ namespace Homework
             }
         }
 
+<<<<<<< HEAD
         private void button1_Click(object sender, EventArgs e)
         {
             Nikos_test_form nikos = new Nikos_test_form();
             this.Hide();
             nikos.Show();
+=======
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> a58b6b0d4d40fa8596f576a871b2ae7ea6c70039
         }
 
         //public static void change_password(int new_random_password, string username_given)

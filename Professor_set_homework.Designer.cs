@@ -40,7 +40,20 @@ namespace Homework
             this.label5 = new System.Windows.Forms.Label();
             this.textname = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.c_name = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.visi = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.IDtxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.hwname = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,19 +64,6 @@ namespace Homework
             this.subject = new Guna.UI2.WinForms.Guna2TextBox();
             this.deadliner = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.hwname = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.IDtxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.visi = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.c_name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -111,7 +111,7 @@ namespace Homework
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(180, 45);
             this.guna2Button2.TabIndex = 3;
-            this.guna2Button2.Text = "guna2Button2";
+            this.guna2Button2.Text = "Καταχώρηση";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // label2
@@ -234,6 +234,34 @@ namespace Homework
             this.guna2Panel1.TabIndex = 11;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
+            // c_name
+            // 
+            this.c_name.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.c_name.DefaultText = "";
+            this.c_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.c_name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.c_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.c_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.c_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.c_name.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.c_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.c_name.Location = new System.Drawing.Point(2, 67);
+            this.c_name.Name = "c_name";
+            this.c_name.PasswordChar = '\0';
+            this.c_name.PlaceholderText = "";
+            this.c_name.SelectedText = "";
+            this.c_name.Size = new System.Drawing.Size(52, 33);
+            this.c_name.TabIndex = 11;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(3, 43);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(188, 21);
+            this.label16.TabIndex = 12;
+            this.label16.Text = "Αριθμός Τάξης(\'1\',\'2\'...)";
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.Controls.Add(this.panel1);
@@ -260,6 +288,143 @@ namespace Homework
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(414, 635);
             this.guna2Panel2.TabIndex = 12;
+            // 
+            // panel1
+            // 
+            this.panel1.AllowDrop = true;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Location = new System.Drawing.Point(7, 436);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(404, 124);
+            this.panel1.TabIndex = 21;
+            this.panel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.panel1_DragDrop);
+            this.panel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.panel1_DragEnter);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(132, 52);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(151, 21);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "Σύρετε εδώ αρχεία";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(3, 411);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(191, 21);
+            this.label13.TabIndex = 20;
+            this.label13.Text = "Μεταφόρτωση Αρχείου";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(142, 566);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(272, 69);
+            this.richTextBox1.TabIndex = 13;
+            this.richTextBox1.Text = "";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(5, 602);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(131, 30);
+            this.guna2Button1.TabIndex = 19;
+            this.guna2Button1.Text = "Μεταφόρτωση";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(3, 347);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(163, 21);
+            this.label14.TabIndex = 18;
+            this.label14.Text = "Ωρατότητα(yes/no)";
+            // 
+            // visi
+            // 
+            this.visi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.visi.DefaultText = "";
+            this.visi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.visi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.visi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.visi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.visi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.visi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.visi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.visi.Location = new System.Drawing.Point(5, 371);
+            this.visi.Name = "visi";
+            this.visi.PasswordChar = '\0';
+            this.visi.PlaceholderText = "";
+            this.visi.SelectedText = "";
+            this.visi.Size = new System.Drawing.Size(148, 21);
+            this.visi.TabIndex = 17;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(3, 54);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(27, 21);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "ID";
+            // 
+            // IDtxt
+            // 
+            this.IDtxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.IDtxt.DefaultText = "";
+            this.IDtxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.IDtxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.IDtxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.IDtxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.IDtxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.IDtxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.IDtxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.IDtxt.Location = new System.Drawing.Point(5, 76);
+            this.IDtxt.Name = "IDtxt";
+            this.IDtxt.PasswordChar = '\0';
+            this.IDtxt.PlaceholderText = "";
+            this.IDtxt.SelectedText = "";
+            this.IDtxt.Size = new System.Drawing.Size(148, 21);
+            this.IDtxt.TabIndex = 13;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 98);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(140, 21);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "Όνομα εργασίας ";
+            // 
+            // hwname
+            // 
+            this.hwname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.hwname.DefaultText = "";
+            this.hwname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.hwname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.hwname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.hwname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.hwname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.hwname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.hwname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.hwname.Location = new System.Drawing.Point(5, 122);
+            this.hwname.Name = "hwname";
+            this.hwname.PasswordChar = '\0';
+            this.hwname.PlaceholderText = "";
+            this.hwname.SelectedText = "";
+            this.hwname.Size = new System.Drawing.Size(148, 21);
+            this.hwname.TabIndex = 11;
             // 
             // label6
             // 
@@ -397,171 +562,6 @@ namespace Homework
             this.label10.Size = new System.Drawing.Size(75, 21);
             this.label10.TabIndex = 6;
             this.label10.Text = "Μάθημα";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 98);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(140, 21);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "Όνομα εργασίας ";
-            // 
-            // hwname
-            // 
-            this.hwname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.hwname.DefaultText = "";
-            this.hwname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.hwname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.hwname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.hwname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.hwname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.hwname.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.hwname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.hwname.Location = new System.Drawing.Point(5, 122);
-            this.hwname.Name = "hwname";
-            this.hwname.PasswordChar = '\0';
-            this.hwname.PlaceholderText = "";
-            this.hwname.SelectedText = "";
-            this.hwname.Size = new System.Drawing.Size(148, 21);
-            this.hwname.TabIndex = 11;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(3, 54);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(27, 21);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "ID";
-            // 
-            // IDtxt
-            // 
-            this.IDtxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.IDtxt.DefaultText = "";
-            this.IDtxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.IDtxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.IDtxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.IDtxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.IDtxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.IDtxt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.IDtxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.IDtxt.Location = new System.Drawing.Point(5, 76);
-            this.IDtxt.Name = "IDtxt";
-            this.IDtxt.PasswordChar = '\0';
-            this.IDtxt.PlaceholderText = "";
-            this.IDtxt.SelectedText = "";
-            this.IDtxt.Size = new System.Drawing.Size(148, 21);
-            this.IDtxt.TabIndex = 13;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(3, 347);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(163, 21);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Ωρατότητα(yes/no)";
-            // 
-            // visi
-            // 
-            this.visi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.visi.DefaultText = "";
-            this.visi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.visi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.visi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.visi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.visi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.visi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.visi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.visi.Location = new System.Drawing.Point(5, 371);
-            this.visi.Name = "visi";
-            this.visi.PasswordChar = '\0';
-            this.visi.PlaceholderText = "";
-            this.visi.SelectedText = "";
-            this.visi.Size = new System.Drawing.Size(148, 21);
-            this.visi.TabIndex = 17;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(5, 602);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(131, 30);
-            this.guna2Button1.TabIndex = 19;
-            this.guna2Button1.Text = "Μεταφόρτωση";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(142, 566);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(272, 69);
-            this.richTextBox1.TabIndex = 13;
-            this.richTextBox1.Text = "";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 411);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(191, 21);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "Μεταφόρτωση Αρχείου";
-            // 
-            // panel1
-            // 
-            this.panel1.AllowDrop = true;
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Location = new System.Drawing.Point(7, 436);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(404, 124);
-            this.panel1.TabIndex = 21;
-            this.panel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.panel1_DragDrop);
-            this.panel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.panel1_DragEnter);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(132, 52);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(151, 21);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "Σύρετε εδώ αρχεία";
-            // 
-            // c_name
-            // 
-            this.c_name.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.c_name.DefaultText = "";
-            this.c_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.c_name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.c_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.c_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.c_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.c_name.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.c_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.c_name.Location = new System.Drawing.Point(2, 67);
-            this.c_name.Name = "c_name";
-            this.c_name.PasswordChar = '\0';
-            this.c_name.PlaceholderText = "";
-            this.c_name.SelectedText = "";
-            this.c_name.Size = new System.Drawing.Size(52, 33);
-            this.c_name.TabIndex = 11;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(3, 43);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(108, 21);
-            this.label16.TabIndex = 12;
-            this.label16.Text = "όνομα τάξης";
             // 
             // Professor_set_homework
             // 

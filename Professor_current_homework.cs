@@ -118,9 +118,27 @@ namespace Homework
 
             com.CommandText = "update Homework_Board set visibility='yes' where homeworkID ='" + inp + "'";
             com.ExecuteNonQuery();
-           
+            SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
+            SQLiteDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                MessageBox.Show("ok", "ενεργεια εγινε", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Περνάω στο public αντικείμενο Student τις τιμές που αντιστοιχούν σε αυτόν στη βάση
+                // Σύμφωνα με το username και το password του
+                
+            }
+            else
+            {
+                MessageBox.Show("Το id δεν βρεθηκε", "ERROR", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+
+
+
 
             string query2 = "select * from Homework_Board where visibility='yes';";
+
             SQLiteDataAdapter adapter = new SQLiteDataAdapter(query2, conn);
 
             DataSet dSet = new DataSet();
