@@ -233,6 +233,13 @@ namespace Homework
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Nikos_test_form nikos = new Nikos_test_form();
+            this.Hide();
+            nikos.Show();
+        }
+
         //public static void change_password(int new_random_password, string username_given)
         //{
         //    // Name of database file
