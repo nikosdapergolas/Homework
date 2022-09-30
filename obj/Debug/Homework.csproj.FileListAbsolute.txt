@@ -69,6 +69,78 @@ C:\Users\alexm\source\repos\Homework\obj\Debug\Homework.csproj.CopyComplete
 C:\Users\alexm\source\repos\Homework\obj\Debug\Homework.exe
 C:\Users\alexm\source\repos\Homework\obj\Debug\Homework.pdb
 C:\Users\alexm\source\repos\Homework\bin\Debug\Homework.pdb
+<<<<<<< HEAD
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\x86\sqlite3.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\x64\sqlite3.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Homework.exe.config
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Homework.exe
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Homework.pdb
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\EntityFramework.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\FluentEmail.Core.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\FluentEmail.Smtp.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.Admin.Directory.directory_v1.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.Auth.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.Core.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Guna.UI2.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Buffers.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Data.SQLite.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Memory.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\EntityFramework.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.pdb
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.Admin.Directory.directory_v1.pdb
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.Admin.Directory.directory_v1.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.Auth.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.Core.pdb
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Google.Apis.Core.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Buffers.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Data.SQLite.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Memory.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.csprojAssemblyReference.cache
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Admin_delete_professor.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Admin_home_page.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Admin_professor_registering.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Admin_show_list_of_professors.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Change_password_via_email.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Email_sending_animation.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Form1.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.LoginForm.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Professor_current_homework.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Professor_grading.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Professor_home_page.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Professor_my_lessons.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Professor_set_homework.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Properties.Resources.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Sign_up_form.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Student_my_lessons.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Student_my_team.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Student_see_current_homework.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.Student_submit_homework.resources
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.csproj.GenerateResource.cache
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.csproj.CoreCompileInputs.cache
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.csproj.CopyComplete
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.exe
+C:\Users\Κίμων Χατζόπουλος\Source\Repos\Homework\obj\Debug\Homework.pdb
+=======
 S:\visual_studio_projects\C#\Homework\bin\Debug\x86\sqlite3.dll
 S:\visual_studio_projects\C#\Homework\bin\Debug\x64\sqlite3.dll
 S:\visual_studio_projects\C#\Homework\bin\Debug\Homework.exe.config
@@ -145,7 +217,13 @@ S:\visual_studio_projects\C#\Homework\bin\Debug\Devart.Data.xml
 S:\visual_studio_projects\C#\Homework\bin\Debug\Devart.Data.SQLite.xml
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Nikos_test_form.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.File_uploading_animation.resources
+>>>>>>> c2b68bacbb18a4c8b6182857c116b93389ab2976
 C:\Users\alexm\source\repos\Homework\bin\Debug\Devart.Data.xml
 C:\Users\alexm\source\repos\Homework\bin\Debug\Devart.Data.SQLite.xml
 C:\Users\alexm\source\repos\Homework\obj\Debug\Homework.File_uploading_animation.resources
 C:\Users\alexm\source\repos\Homework\obj\Debug\Homework.Nikos_test_form.resources
+>>>>>>> 2720ae2ae21743f1022fb8dd6203519746057b24
+C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\bin\Debug\Devart.Data.xml
+C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\bin\Debug\Devart.Data.SQLite.xml
+C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\obj\Debug\Homework.File_uploading_animation.resources
+C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\obj\Debug\Homework.Nikos_test_form.resources
