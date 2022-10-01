@@ -73,11 +73,7 @@ namespace Homework
                     MessageBox.Show("Δεν μπορείτε να αφήσετε το πεδίο \"Χρόνος\" κενό. Προσπαθήστε ξανά", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
 
-                if (gunaatext.Text == "1" || gunaatext.Text == "2" || gunaatext.Text == "3" || gunaatext.Text == "4")
-                {
-
-                }
-                else
+                if (gunaatext.Text != "1" || gunaatext.Text != "2" || gunaatext.Text != "3" || gunaatext.Text != "4")
                 {
                     MessageBox.Show("Η είσοδος στο πεδίο \"Χρόνος\" πρέπει να είναι της μορφής '1' , '2' , '3' ή '4'"
                         , "Σφάλμα"
