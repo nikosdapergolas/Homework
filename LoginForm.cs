@@ -92,8 +92,9 @@ namespace Homework
             {
                 professor_login(guna2TextBox1.Text,guna2TextBox2.Text);
             }
-
+            reader.Close();
             conn.Close();
+            conn.Dispose();
         }
 
         /// <summary>
@@ -132,13 +133,16 @@ namespace Homework
                 this.Hide();
                 Professor_home_page php = new Professor_home_page(this,professor);
                 php.Show();
+
             }
             else
             {
                 admin_login(guna2TextBox1.Text,guna2TextBox2.Text);
             }
 
+            reader.Close();
             conn.Close();
+            conn.Dispose();
         }
 
         /// <summary>
@@ -182,8 +186,9 @@ namespace Homework
             {
                 MessageBox.Show("Δεν υπάρχει κάποιος χρήστης με το συγκεκριμένο username ή password... Προσπαθήστε ξανά.", "ERROR", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
-
+            reader.Close();
             conn.Close();
+            conn.Dispose();
         }
 
         /// <summary>
