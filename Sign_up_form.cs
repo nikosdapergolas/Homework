@@ -68,6 +68,22 @@ namespace Homework
                 {
                     MessageBox.Show("Δεν μπορείτε να αφήσετε το πεδίο \"Password\" κενό. Προσπαθήστε ξανά", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+                else if (gunaatext.Text == "")
+                {
+                    MessageBox.Show("Δεν μπορείτε να αφήσετε το πεδίο \"Χρόνος\" κενό. Προσπαθήστε ξανά", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+                if (gunaatext.Text == "1" || gunaatext.Text == "2" || gunaatext.Text == "3" || gunaatext.Text == "4")
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Η είσοδος στο πεδίο \"Χρόνος\" πρέπει να είναι της μορφής '1' , '2' , '3' ή '4'"
+                        , "Σφάλμα"
+                        , MessageBoxButtons.OK
+                        , MessageBoxIcon.Error);
+                }
 
                 else
                 {
@@ -78,17 +94,7 @@ namespace Homework
                     string password = guna2TextBox5.Text;
                     string year1=gunaatext.Text;
                     
-                    if(year1=="1"|| year1 == "2"|| year1 == "3"||year1 == "4")
-                    {
-                            
-                    }
-                    else
-                    {
-                        MessageBox.Show("error year inputted not in format '1' , '2', '3','4'");
-                        guna2Button1.Refresh();
-                    }    
                     
-
                     // Name of database file
                     string fileName = "HomeworkManagement.db";
                     FileInfo f = new FileInfo(fileName);
