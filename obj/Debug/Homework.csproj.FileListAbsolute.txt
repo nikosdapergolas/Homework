@@ -193,6 +193,10 @@ S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_professor_registe
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_show_list_of_professors.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Change_password_via_email.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Email_sending_animation.resources
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8f44c8e5bd04996d2cf42da879ae113b68bb1191
 C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\x86\sqlite3.dll
 C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\x64\sqlite3.dll
 C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\Homework.exe.config
@@ -247,6 +251,10 @@ C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.csproj.CoreCo
 C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.csproj.CopyComplete
 C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.exe
 C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.pdb
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8f44c8e5bd04996d2cf42da879ae113b68bb1191
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Form1.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.LoginForm.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_current_homework.resources
