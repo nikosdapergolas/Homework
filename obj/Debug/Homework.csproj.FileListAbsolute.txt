@@ -196,8 +196,11 @@ S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Email_sending_animation
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> 8f44c8e5bd04996d2cf42da879ae113b68bb1191
+=======
 >>>>>>> 8f44c8e5bd04996d2cf42da879ae113b68bb1191
 =======
 >>>>>>> 8f44c8e5bd04996d2cf42da879ae113b68bb1191
@@ -260,6 +263,10 @@ C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.pdb
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8f44c8e5bd04996d2cf42da879ae113b68bb1191
 =======
 =======
 >>>>>>> 8f44c8e5bd04996d2cf42da879ae113b68bb1191
