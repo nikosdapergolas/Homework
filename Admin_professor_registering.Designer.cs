@@ -37,15 +37,15 @@ namespace Homework
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 41);
+            this.label1.Location = new System.Drawing.Point(17, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 21);
+            this.label1.Size = new System.Drawing.Size(269, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Εγγραφή καθηγητών από: ";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(139, 252);
+            this.button1.Location = new System.Drawing.Point(554, 418);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(223, 200);
             this.button1.TabIndex = 1;
@@ -55,9 +55,9 @@ namespace Homework
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(268, 41);
+            this.label2.Location = new System.Drawing.Point(292, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(14, 21);
+            this.label2.Size = new System.Drawing.Size(17, 28);
             this.label2.TabIndex = 2;
             this.label2.Text = ".";
             // 
