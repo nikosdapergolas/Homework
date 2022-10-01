@@ -80,6 +80,7 @@ namespace Homework
                     SQLiteCommand cmd = new SQLiteCommand(query1, conn);
                     SQLiteDataReader reader = cmd.ExecuteReader();
 
+                    reader.Close();
                     conn.Close();
                     MessageBox.Show("Ο νέος καθηγητής έχει καταχωρηθεί στο σύστημα επιτυχώς!!", "Sign up successful.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //loginForm.Show();

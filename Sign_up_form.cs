@@ -104,6 +104,7 @@ namespace Homework
                     SQLiteCommand cmd = new SQLiteCommand(query1, conn);
                     SQLiteDataReader reader = cmd.ExecuteReader();
 
+                    reader.Close();
                     conn.Close();
                     MessageBox.Show("Έχετε καταχωρηθεί στο σύστημα επιτυχώς!! Σας μεταφέρουμε πίσω στην φόρμα εισαγωγής.", "Sign up successful.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     loginForm.Show();

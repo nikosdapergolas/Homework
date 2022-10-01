@@ -122,6 +122,7 @@ namespace Homework
 
                                 change_is_happening = false;
                             }
+                            reader.Close();
                         }
                     }
                     conn.Close();

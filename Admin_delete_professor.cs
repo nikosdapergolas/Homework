@@ -37,8 +37,8 @@ namespace Homework
                 string query1 = "Delete from Professor where id = '" + guna2TextBox1.Text + "';";
                 SQLiteCommand cmd2 = new SQLiteCommand(query1, conn);
                 SQLiteDataReader reader = cmd2.ExecuteReader();
-                //SQLiteDataReader reader2 = cmd2.ExecuteNonQuery();
 
+                reader.Close();
                 conn.Close();
                 MessageBox.Show("Ο καθηγητής με id " + guna2TextBox1.Text + " έχει πλέον διαγραφεί από το σύστημα!!", "Deleting successful.", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
