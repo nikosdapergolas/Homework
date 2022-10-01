@@ -38,6 +38,21 @@ namespace Homework
                 SQLiteCommand cmd2 = new SQLiteCommand(query1, conn);
                 SQLiteDataReader reader = cmd2.ExecuteReader();
 
+                //if(reader.Read())
+                //{
+                //    MessageBox.Show("Ο καθηγητής με id " + guna2TextBox1.Text + " έχει πλέον διαγραφεί από το σύστημα!!"
+                //        , "Deleting successful."
+                //        , MessageBoxButtons.OK
+                //        , MessageBoxIcon.Information);
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Δεν υπάρχει καθηγητής με το συγκεκριμένο id... Προσπαθήστε ξανά"
+                //        , "Σφάλμα!"
+                //        , MessageBoxButtons.OK
+                //        , MessageBoxIcon.Error);
+                //}
+
                 reader.Close();
                 conn.Close();
                 MessageBox.Show("Ο καθηγητής με id " + guna2TextBox1.Text + " έχει πλέον διαγραφεί από το σύστημα!!", "Deleting successful.", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -46,6 +61,14 @@ namespace Homework
             {
                 // Default error message
                 MessageBox.Show(exception.Message);
+            }
+        }
+
+        private void guna2TextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                guna2Button1_Click(this, new EventArgs());
             }
         }
     }

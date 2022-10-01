@@ -78,6 +78,7 @@ namespace Homework
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(227, 36);
             this.guna2TextBox1.TabIndex = 19;
+            this.guna2TextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox1_KeyDown);
             // 
             // label2
             // 

@@ -103,5 +103,13 @@ namespace Homework
         {
             richTextBox1.Visible = false;
         }
+
+        private void guna2TextBox6_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                guna2Button1_Click(this, new EventArgs());
+            }
+        }
     }
 }
