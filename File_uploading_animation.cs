@@ -30,10 +30,11 @@ namespace Homework
         {
             timer_count++;
 
-            if(timer_count == 6)
+            if(timer_count == 10)
             {
                 this.Close();
                 nikos.Enabled = true;
+                nikos.BringToFront();
             }
         }
     }
