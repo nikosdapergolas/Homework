@@ -32,18 +32,15 @@ namespace Homework
 
             SQLiteConnection conn = new SQLiteConnection(connectionstring);
             conn.Open();
-            string query1 = "select * from Professor;";
-            SQLiteCommand cmd = new SQLiteCommand(query1, conn);
-            SQLiteDataReader reader = cmd.ExecuteReader();
 
-            while(reader.Read())
-            {
-                guna2DataGridView1.Rows.Add((new object[] {
-                reader.GetValue(0),  // U can use column index
-                reader.GetValue(reader.GetOrdinal("name")),  // Or column name like this
-                }));
-            }
+            string query1 = "select id,name,surname,email,username from Professor";
+            SQLiteDataAdapter adapter = new SQLiteDataAdapter(query1, conn);
 
+            DataSet dSet = new DataSet();
+            adapter.Fill(dSet, "wow");
+            guna2DataGridView1.DataSource = dSet.Tables[0];
+            DataTable dt = new DataTable();
+            conn.Close();
         }
     }
 }

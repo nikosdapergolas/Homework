@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Σε αυτή τη φόρμα, εγγράφονται μόνο καθηγητές οι οποίοι επιθυμούν να αποκτήσουν λογαριασμό στο σύστημα διαχείρησης εργασιών, και έχουν ήδη έρθει σε επαφή μέ κάποιον admin ή με κάποιον άνθρωπο απο τη γραμματεία για έγκριση</value>
+  </data>
 </root>

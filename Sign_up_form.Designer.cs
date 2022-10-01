@@ -89,9 +89,9 @@ namespace Homework
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(84, 315);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 21);
+            this.label7.Size = new System.Drawing.Size(145, 21);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Χρόνος";
+            this.label7.Text = "Χρόνος φοίτησης";
             // 
             // gunaatext
             // 

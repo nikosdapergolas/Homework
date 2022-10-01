@@ -72,15 +72,13 @@ namespace Homework
                 {
                     MessageBox.Show("Δεν μπορείτε να αφήσετε το πεδίο \"Χρόνος\" κενό. Προσπαθήστε ξανά", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-
-                if (gunaatext.Text != "1" || gunaatext.Text != "2" || gunaatext.Text != "3" || gunaatext.Text != "4")
+                else if (gunaatext.Text != "1" && gunaatext.Text != "2" && gunaatext.Text != "3" && gunaatext.Text != "4")
                 {
                     MessageBox.Show("Η είσοδος στο πεδίο \"Χρόνος\" πρέπει να είναι της μορφής '1' , '2' , '3' ή '4'"
-                        , "Σφάλμα"
-                        , MessageBoxButtons.OK
-                        , MessageBoxIcon.Error);
+                                , "Σφάλμα"
+                                , MessageBoxButtons.OK
+                                , MessageBoxIcon.Error);
                 }
-
                 else
                 {
                     string name = guna2TextBox1.Text;
@@ -107,7 +105,7 @@ namespace Homework
                     SQLiteDataReader reader = cmd.ExecuteReader();
 
                     conn.Close();
-                    MessageBox.Show("Έχετε καταχωρηθεί στο σύστημα επιτυχώς!! Σας μεταφέρουμε πίσω στην φόρμα εισαγωγής.", "Sign in successful.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Έχετε καταχωρηθεί στο σύστημα επιτυχώς!! Σας μεταφέρουμε πίσω στην φόρμα εισαγωγής.", "Sign up successful.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     loginForm.Show();
                     this.Close();
                 }
