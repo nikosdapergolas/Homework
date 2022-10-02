@@ -23,6 +23,41 @@ namespace Homework
         {
            
         }
+        bool Check1_AM(string AM1)
+        {
+            // Name of database file
+            string fileName = "HomeworkManagement.db";
+            FileInfo f = new FileInfo(fileName);
+            // Full path to it
+            string path = f.FullName;
+
+            // Connection string with relative path
+            string connectionstring = "Data Source=" + path + ";Version=3;";
+
+            SQLiteConnection conn = new SQLiteConnection(connectionstring);
+            conn.Open();
+            string query1 = "select * from Student where A_M='" + AM1 + "';";
+            SQLiteCommand cmd = new SQLiteCommand(query1, conn);
+            SQLiteDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                reader.Close();
+                conn.Close();
+                conn.Dispose();
+                return true;
+
+            }
+            else
+            {
+                reader.Close();
+                conn.Close();
+                conn.Dispose();
+                return false;
+            }
+
+
+        }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
@@ -65,27 +100,78 @@ namespace Homework
             string res = "l";
             if (p == 1)
             {
-                string[] names = { name1.Text};
-                 res = string.Join(",", names);
+                bool AM1_exist = Check1_AM(name1.Text);
+                if (AM1_exist) 
+                {
+                    string[] names = { name1.Text};
+                    res = string.Join(",", names);
+                }
+                else 
+                {
+                    MessageBox.Show("Ο μαθητής με αυτό το ΑΜ δεν υπάρχει");
+                }
+                
             }
             if (p == 2)
             {
-                string[] names = { name1.Text, name2.Text };
-                 res = string.Join(",", names);
+                bool AM1_exist = Check1_AM(name1.Text);
+                bool AM2_exist = Check1_AM(name2.Text);
+                if (AM1_exist && AM2_exist)
+                {
+                    string[] names = { name1.Text, name2.Text };
+                    res = string.Join(",", names);
+                }
+                else
+                {
+                    MessageBox.Show("Οι μαθητές με αυτό το ΑΜ δεν υπάρχουν");
+                }
+                
             }
             if (p == 3)
             {
-                string[] names = { name1.Text, name2.Text, name3.Text };
-                 res = string.Join(",", names);
+                bool AM1_exist = Check1_AM(name1.Text);
+                bool AM2_exist = Check1_AM(name2.Text);
+                bool AM3_exist = Check1_AM(name3.Text);
+                if (AM1_exist && AM2_exist && AM3_exist)
+                {
+                    string[] names = { name1.Text, name2.Text, name3.Text };
+                    res = string.Join(",", names);
+                }
+                else
+                {
+                    MessageBox.Show("Οι μαθητές με αυτό το ΑΜ δεν υπάρχουν");
+                }
+                
             }
             if (p == 4)
             {
-                string[] names = { name1.Text, name2.Text, name3.Text, name4.Text };
-                 res = string.Join(",", names);
+                bool AM1_exist = Check1_AM(name1.Text);
+                bool AM2_exist = Check1_AM(name2.Text);
+                bool AM3_exist = Check1_AM(name3.Text);
+                bool AM4_exist = Check1_AM(name4.Text);
+                if (AM1_exist && AM2_exist && AM3_exist && AM4_exist)
+                {
+                    string[] names = { name1.Text, name2.Text, name3.Text, name4.Text };
+                    res = string.Join(",", names);
+                }
+                else
+                {
+                    MessageBox.Show("Οι μαθητές με αυτό το ΑΜ δεν υπάρχουν");
+                }
+                
             }
             
+           
+
+
+
+
+
+
+
+
+
             string tn = guna2TextBox1.Text;
-            
             // Name of database file
             string fileName = "HomeworkManagement.db";
             FileInfo f = new FileInfo(fileName);
