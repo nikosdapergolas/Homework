@@ -95,7 +95,7 @@ namespace Homework
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            bool b = true;
             int p = Convert.ToInt32(Math.Round(numericUpDown1.Value, 0));
             string res = "l";
             if (p == 1)
@@ -109,6 +109,7 @@ namespace Homework
                 else 
                 {
                     MessageBox.Show("Ο μαθητής με αυτό το ΑΜ δεν υπάρχει");
+                    b = false;
                 }
                 
             }
@@ -124,6 +125,7 @@ namespace Homework
                 else
                 {
                     MessageBox.Show("Οι μαθητές με αυτό το ΑΜ δεν υπάρχουν");
+                    b = false;
                 }
                 
             }
@@ -140,6 +142,7 @@ namespace Homework
                 else
                 {
                     MessageBox.Show("Οι μαθητές με αυτό το ΑΜ δεν υπάρχουν");
+                    b = false;
                 }
                 
             }
@@ -157,55 +160,65 @@ namespace Homework
                 else
                 {
                     MessageBox.Show("Οι μαθητές με αυτό το ΑΜ δεν υπάρχουν");
+                    b = false;
                 }
                 
             }
+
+
+
+
+
+
+
+
+
+
+            if (b == true) 
+            {
+                string tn = guna2TextBox1.Text;
+                // Name of database file
+                string fileName = "HomeworkManagement.db";
+                FileInfo f = new FileInfo(fileName);
+                // Full path to it
+                string path = f.FullName;
+
+                // Connection string with relative path
+                string connectionstring = "Data Source=" + path + ";Version=3;";
+                SQLiteConnection conn = new SQLiteConnection(connectionstring);
+                conn.Open();
+                System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
+                com.CommandText = "INSERT INTO Team(teamName,listOfAM) VALUES ('" + tn + "','" + res + "');";
+                try
+                {
+
+                    SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+
+                    conn.Close();
+                    MessageBox.Show("Καταχωρηθηκε η ομάδα ", "Επιτυχής καταχώρηση", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    name1.Clear();
+                    name2.Clear();
+                    name3.Clear();
+                    name4.Clear();
+                    guna2TextBox1.Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    // Default error message
+                    MessageBox.Show("Το όνομα της ομάδας υπάρχει ήδη");
+                    
+                }
+                finally 
+                { 
+                    conn.Close();
+                    
+                }
+            }
             
            
-
-
-
-
-
-
-
-
-
-            string tn = guna2TextBox1.Text;
-            // Name of database file
-            string fileName = "HomeworkManagement.db";
-            FileInfo f = new FileInfo(fileName);
-            // Full path to it
-            string path = f.FullName;
-
-            // Connection string with relative path
-            string connectionstring = "Data Source=" + path + ";Version=3;";
-            SQLiteConnection conn = new SQLiteConnection(connectionstring);
-            conn.Open();
-            System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
-            com.CommandText = "INSERT INTO Team(teamName,listOfAM) VALUES ('" + tn + "','" + res + "');";
-            try
-            {
-
-                SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
-                SQLiteDataReader reader = cmd.ExecuteReader();
-
-
-                conn.Close();
-                MessageBox.Show("Καταχωρηθηκε η ομάδα ", "Επιτυχής καταχώρηση", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                name1.Clear();
-                name2.Clear();
-                name3.Clear();
-                name4.Clear();
-                guna2TextBox1.Clear();
-
-            }
-            catch (Exception ex)
-            {
-                // Default error message
-                MessageBox.Show("Το όνομα της ομάδας υπάρχει ήδη");
-                conn.Close();
-            }
 
 
         }
