@@ -205,7 +205,7 @@ namespace Homework
 
                 // Άνοιγμα της φόρμας που ασχολείται με τα μαθήματά μου μέσα στο πάνελ3 της Form
 
-                adp = new Admin_delete_professor { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                adp = new Admin_delete_professor(admin) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 this.panel3.Controls.Add(adp);
                 adp.Show();
             }
