@@ -31,6 +31,8 @@ namespace Homework
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sign_up_form));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.gunaatext = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@ namespace Homework
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.gunaatext = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -81,6 +81,40 @@ namespace Homework
             this.panel1.Size = new System.Drawing.Size(350, 650);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(84, 315);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(145, 21);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Χρόνος φοίτησης";
+            // 
+            // gunaatext
+            // 
+            this.gunaatext.Animated = true;
+            this.gunaatext.AutoRoundedCorners = true;
+            this.gunaatext.BorderRadius = 18;
+            this.gunaatext.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaatext.DefaultText = "";
+            this.gunaatext.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gunaatext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gunaatext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaatext.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaatext.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaatext.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaatext.ForeColor = System.Drawing.Color.Black;
+            this.gunaatext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaatext.Location = new System.Drawing.Point(71, 337);
+            this.gunaatext.Name = "gunaatext";
+            this.gunaatext.PasswordChar = '\0';
+            this.gunaatext.PlaceholderText = "";
+            this.gunaatext.SelectedText = "";
+            this.gunaatext.Size = new System.Drawing.Size(227, 38);
+            this.gunaatext.TabIndex = 14;
             // 
             // guna2PictureBox2
             // 
@@ -209,6 +243,7 @@ namespace Homework
             this.guna2TextBox6.SelectedText = "";
             this.guna2TextBox6.Size = new System.Drawing.Size(227, 36);
             this.guna2TextBox6.TabIndex = 5;
+            this.guna2TextBox6.TextChanged += new System.EventHandler(this.guna2TextBox6_TextChanged);
             this.guna2TextBox6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox6_KeyDown);
             // 
             // guna2TextBox5
@@ -358,46 +393,12 @@ namespace Homework
             this.richTextBox1.BackColor = System.Drawing.Color.Black;
             this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.White;
-            this.richTextBox1.Location = new System.Drawing.Point(84, 78);
+            this.richTextBox1.Location = new System.Drawing.Point(248, 117);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(509, 376);
             this.richTextBox1.TabIndex = 14;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             this.richTextBox1.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(84, 315);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 21);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Year";
-            // 
-            // gunaatext
-            // 
-            this.gunaatext.Animated = true;
-            this.gunaatext.AutoRoundedCorners = true;
-            this.gunaatext.BorderRadius = 18;
-            this.gunaatext.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaatext.DefaultText = "";
-            this.gunaatext.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gunaatext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gunaatext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaatext.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaatext.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaatext.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaatext.ForeColor = System.Drawing.Color.Black;
-            this.gunaatext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaatext.Location = new System.Drawing.Point(71, 337);
-            this.gunaatext.Name = "gunaatext";
-            this.gunaatext.PasswordChar = '\0';
-            this.gunaatext.PlaceholderText = "";
-            this.gunaatext.SelectedText = "";
-            this.gunaatext.Size = new System.Drawing.Size(227, 38);
-            this.gunaatext.TabIndex = 14;
             // 
             // Sign_up_form
             // 

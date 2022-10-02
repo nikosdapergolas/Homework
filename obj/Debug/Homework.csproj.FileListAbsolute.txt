@@ -193,6 +193,61 @@ S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_professor_registe
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_show_list_of_professors.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Change_password_via_email.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Email_sending_animation.resources
+>>>>>>> 8f44c8e5bd04996d2cf42da879ae113b68bb1191
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\x86\sqlite3.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\x64\sqlite3.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\Homework.exe.config
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\Homework.exe
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\Homework.pdb
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\EntityFramework.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\FluentEmail.Core.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\FluentEmail.Smtp.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\Guna.UI2.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Buffers.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Data.SQLite.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Memory.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\EntityFramework.xml
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Buffers.xml
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Data.SQLite.xml
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Memory.xml
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Νικολέτα\Source\Repos\Homework\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.csproj.AssemblyReference.cache
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Admin_delete_professor.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Admin_home_page.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Admin_professor_registering.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Admin_show_list_of_professors.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Change_password_via_email.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Email_sending_animation.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Form1.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.LoginForm.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Professor_current_homework.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Professor_grading.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Professor_home_page.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Professor_my_lessons.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Professor_set_homework.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Properties.Resources.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Sign_up_form.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Student_my_lessons.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Student_my_team.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Student_see_current_homework.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.Student_submit_homework.resources
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.csproj.GenerateResource.cache
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.csproj.CoreCompileInputs.cache
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.csproj.CopyComplete
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.exe
+C:\Users\Νικολέτα\Source\Repos\Homework\obj\Debug\Homework.pdb
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Form1.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.LoginForm.resources
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Professor_current_homework.resources
@@ -227,3 +282,4 @@ C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\bin\Debug\Devar
 C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\bin\Debug\Devart.Data.SQLite.xml
 C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\obj\Debug\Homework.File_uploading_animation.resources
 C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\obj\Debug\Homework.Nikos_test_form.resources
+>>>>>>> 2f02315247f81ad597f912ba06f081808a78ceb2

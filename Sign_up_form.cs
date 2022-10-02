@@ -68,7 +68,17 @@ namespace Homework
                 {
                     MessageBox.Show("Δεν μπορείτε να αφήσετε το πεδίο \"Password\" κενό. Προσπαθήστε ξανά", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-
+                else if (gunaatext.Text == "")
+                {
+                    MessageBox.Show("Δεν μπορείτε να αφήσετε το πεδίο \"Χρόνος\" κενό. Προσπαθήστε ξανά", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else if (gunaatext.Text != "1" && gunaatext.Text != "2" && gunaatext.Text != "3" && gunaatext.Text != "4")
+                {
+                    MessageBox.Show("Η είσοδος στο πεδίο \"Χρόνος\" πρέπει να είναι της μορφής '1' , '2' , '3' ή '4'"
+                                , "Σφάλμα"
+                                , MessageBoxButtons.OK
+                                , MessageBoxIcon.Error);
+                }
                 else
                 {
                     string name = guna2TextBox1.Text;
@@ -78,17 +88,7 @@ namespace Homework
                     string password = guna2TextBox5.Text;
                     string year1=gunaatext.Text;
                     
-                    if(year1=="1"|| year1 == "2"|| year1 == "3"||year1 == "4")
-                    {
-                            
-                    }
-                    else
-                    {
-                        MessageBox.Show("error year inputted not in format '1' , '2', '3','4'");
-                        guna2Button1.Refresh();
-                    }    
                     
-
                     // Name of database file
                     string fileName = "HomeworkManagement.db";
                     FileInfo f = new FileInfo(fileName);
@@ -104,8 +104,9 @@ namespace Homework
                     SQLiteCommand cmd = new SQLiteCommand(query1, conn);
                     SQLiteDataReader reader = cmd.ExecuteReader();
 
+                    reader.Close();
                     conn.Close();
-                    MessageBox.Show("Έχετε καταχωρηθεί στο σύστημα επιτυχώς!! Σας μεταφέρουμε πίσω στην φόρμα εισαγωγής.", "Sign in successful.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Έχετε καταχωρηθεί στο σύστημα επιτυχώς!! Σας μεταφέρουμε πίσω στην φόρμα εισαγωγής.", "Sign up successful.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     loginForm.Show();
                     this.Close();
                 }
@@ -149,6 +150,11 @@ namespace Homework
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox6_TextChanged(object sender, EventArgs e)
         {
 
         }

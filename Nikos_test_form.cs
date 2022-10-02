@@ -45,8 +45,8 @@ namespace Homework
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
             File_uploading_animation file_upload = new File_uploading_animation(this);
+            this.Enabled = false;
             file_upload.Show();
         }
     }

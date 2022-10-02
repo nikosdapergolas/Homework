@@ -105,6 +105,7 @@ namespace Homework
             this.Controls.Add(this.button1);
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "Nikos_test_form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nikos_test_form";
             this.Load += new System.EventHandler(this.Nikos_test_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
