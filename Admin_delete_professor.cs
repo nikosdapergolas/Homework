@@ -14,9 +14,12 @@ namespace Homework
 {
     public partial class Admin_delete_professor : Form
     {
-        public Admin_delete_professor()
+        Admin admin;
+
+        public Admin_delete_professor(Admin a)
         {
             InitializeComponent();
+            admin = a;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

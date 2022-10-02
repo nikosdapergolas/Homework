@@ -14,6 +14,7 @@ namespace Homework
 {
     public partial class Admin_professor_registering : Form
     {
+        // Για να μπορώ να καλέσω τις συναρτήσεις της κλάσης "Admin"
         Admin admin;
 
         public Admin_professor_registering(Admin a)
@@ -27,6 +28,11 @@ namespace Homework
             label2.Text = admin.Name;
         }
 
+        /// <summary>
+        /// Κατά τό πάτημα του κουμπιού "Submit" γίνονται οι απαραίτητοι έλεγχοι για να μην 
+        /// μείνει καμία τιμή κενή, και εντέλει καλείται η συνάρτηση απο την κλάση 
+        /// Admin η οποία είναι υπεύθυνη για την δημιουργία καινούριου καθηγητή
+        /// </summary>
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             try
@@ -64,27 +70,8 @@ namespace Homework
                     string username = guna2TextBox4.Text;
                     string password = guna2TextBox5.Text;
 
-
-                    // Name of database file
-                    string fileName = "HomeworkManagement.db";
-                    FileInfo f = new FileInfo(fileName);
-                    // Full path to it
-                    string path = f.FullName;
-
-                    // Connection string with relative path
-                    string connectionstring = "Data Source=" + path + ";Version=3;";
-
-                    SQLiteConnection conn = new SQLiteConnection(connectionstring);
-                    conn.Open();
-                    string query1 = "INSERT INTO Professor(name,surname,email,username,password) VALUES ('" + name + "','" + surname + "','" + email + "','" + username + "','" + password + "');";
-                    SQLiteCommand cmd = new SQLiteCommand(query1, conn);
-                    SQLiteDataReader reader = cmd.ExecuteReader();
-
-                    reader.Close();
-                    conn.Close();
-                    MessageBox.Show("Ο νέος καθηγητής έχει καταχωρηθεί στο σύστημα επιτυχώς!!", "Sign up successful.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //loginForm.Show();
-                    //this.Close();
+                    // Κλήση της συνάρτησης του Admin για να φτιαχτεί ένας νέος Professor με τα στοιχεία απο την φόρμα
+                    admin.createProfessor(name, surname, email, username, password);
                 }
             }
             catch (Exception exception)
@@ -94,16 +81,28 @@ namespace Homework
             }
         }
 
+        /// <summary>
+        /// Οταν ο χρήστης κάνει hover πάνω απο το εικονίδιο για παραπάνω 
+        /// πληροφορίες εμφανίζεται ένα πάνελ με αυτές τις παραπάνω πληροφορίες
+        /// </summary>
         private void guna2PictureBox2_MouseHover(object sender, EventArgs e)
         {
             richTextBox1.Visible = true;
         }
 
+        /// <summary>
+        /// Οταν ο χρήστης κάνει hover έξω απο το εικονίδιο για παραπάνω 
+        /// πληροφορίες εξαφανίζεται το πάνελ με αυτές τις παραπάνω πληροφορίες
+        /// </summary>
         private void guna2PictureBox2_MouseLeave(object sender, EventArgs e)
         {
             richTextBox1.Visible = false;
         }
 
+        /// <summary>
+        /// Όταν ο χρήστης βρίσκεται στο textbox της επαλήθευσης του κωδικού του,
+        /// τότε αν πατήσει enter, είναι σαν να έκανε κλικ στο κουμπί "Submit" 
+        /// </summary>
         private void guna2TextBox6_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
