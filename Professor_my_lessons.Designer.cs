@@ -32,14 +32,14 @@ namespace Homework
             this.dgv1 = new System.Windows.Forms.DataGridView();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.dgv2 = new System.Windows.Forms.DataGridView();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.dgv3 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -90,6 +90,24 @@ namespace Homework
             this.splitContainer1.SplitterDistance = 80;
             this.splitContainer1.TabIndex = 7;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
+            this.guna2Button1.BorderThickness = 2;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
+            this.guna2Button1.Location = new System.Drawing.Point(3, 3);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(380, 71);
+            this.guna2Button1.TabIndex = 2;
+            this.guna2Button1.Text = "Προβολή Ιστορικού Εργασιών";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // splitContainer2
             // 
             this.splitContainer2.Location = new System.Drawing.Point(16, 211);
@@ -118,6 +136,24 @@ namespace Homework
             this.dgv2.TabIndex = 4;
             this.dgv2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv2_CellContentClick);
             // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
+            this.guna2Button2.BorderThickness = 2;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
+            this.guna2Button2.Location = new System.Drawing.Point(0, 3);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(383, 71);
+            this.guna2Button2.TabIndex = 3;
+            this.guna2Button2.Text = "Προβολή Ολοκληρωμένων εργασιών ";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
             // splitContainer3
             // 
             this.splitContainer3.Location = new System.Drawing.Point(16, 378);
@@ -145,50 +181,6 @@ namespace Homework
             this.dgv3.Size = new System.Drawing.Size(734, 72);
             this.dgv3.TabIndex = 4;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 21);
-            this.label2.TabIndex = 10;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
-            this.guna2Button1.Location = new System.Drawing.Point(3, 3);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(380, 71);
-            this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Text = "Προβολή Ιστορικού Εργασιών";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
-            this.guna2Button2.BorderThickness = 2;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(78)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(214)))), ((int)(((byte)(153)))));
-            this.guna2Button2.Location = new System.Drawing.Point(0, 3);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(383, 71);
-            this.guna2Button2.TabIndex = 3;
-            this.guna2Button2.Text = "Προβολή Ολοκληρωμένων εργασιών ";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
-            // 
             // guna2Button3
             // 
             this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
@@ -206,6 +198,14 @@ namespace Homework
             this.guna2Button3.TabIndex = 2;
             this.guna2Button3.Text = "Προβολή διορθωμένων εργασιών ";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 21);
+            this.label2.TabIndex = 10;
             // 
             // Professor_my_lessons
             // 

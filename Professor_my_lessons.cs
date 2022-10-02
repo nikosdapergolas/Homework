@@ -209,15 +209,15 @@ namespace Homework
             string query1 = "select * from Complete_Homework;";
             SQLiteDataAdapter adapter = new SQLiteDataAdapter(query1, conn);
 
-            DataSet dSet = new DataSet();
-            adapter.Fill(dSet, "wow");
-            dgv1.DataSource = dSet.Tables[0];
+            DataSet dSet2 = new DataSet();
+            adapter.Fill(dSet2, "wow1");
+            dgv2.DataSource = dSet2.Tables[0];
 
 
 
 
 
-            DataTable dt = new DataTable();
+            DataTable dt2 = new DataTable();
 
 
 
@@ -241,15 +241,15 @@ namespace Homework
             string query1 = "select * from Corrected_Homework;";
             SQLiteDataAdapter adapter = new SQLiteDataAdapter(query1, conn);
 
-            DataSet dSet = new DataSet();
-            adapter.Fill(dSet, "wow");
-            dgv1.DataSource = dSet.Tables[0];
+            DataSet dSet1 = new DataSet();
+            adapter.Fill(dSet1, "wow22");
+            dgv3.DataSource = dSet1.Tables[0];
 
 
 
 
 
-            DataTable dt = new DataTable();
+            DataTable dt1 = new DataTable();
 
 
 
