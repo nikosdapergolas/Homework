@@ -79,7 +79,7 @@ namespace Homework
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(200, 53);
             this.guna2Button4.TabIndex = 16;
-            this.guna2Button4.Text = "Ενημέρωση στοιχείων των  καθηγητών";
+            this.guna2Button4.Text = "Ενημέρωση στοιχείων    των  χρηστών";
             this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
