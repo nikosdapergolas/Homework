@@ -23,27 +23,73 @@ namespace Homework
         /// </summary>
         internal void createProfessor(string name, string surname, string email, string username, string password)
         {
-            // Name of database file
-            string fileName = "HomeworkManagement.db";
-            FileInfo f = new FileInfo(fileName);
-            // Full path to it
-            string path = f.FullName;
+            try
+            { 
+                // Name of database file
+                string fileName = "HomeworkManagement.db";
+                FileInfo f = new FileInfo(fileName);
+                // Full path to it
+                string path = f.FullName;
 
-            // Connection string with relative path
-            string connectionstring = "Data Source=" + path + ";Version=3;";
+                // Connection string with relative path
+                string connectionstring = "Data Source=" + path + ";Version=3;";
 
-            SQLiteConnection conn = new SQLiteConnection(connectionstring);
-            conn.Open();
-            string query1 = "INSERT INTO Professor(name,surname,email,username,password) VALUES ('" + name + "','" + surname + "','" + email + "','" + username + "','" + password + "');";
-            SQLiteCommand cmd = new SQLiteCommand(query1, conn);
-            SQLiteDataReader reader = cmd.ExecuteReader();
+                SQLiteConnection conn = new SQLiteConnection(connectionstring);
+                conn.Open();
+                string query1 = "INSERT INTO Professor(name,surname,email,username,password) VALUES ('" + name + "','" + surname + "','" + email + "','" + username + "','" + password + "');";
+                SQLiteCommand cmd = new SQLiteCommand(query1, conn);
+                SQLiteDataReader reader = cmd.ExecuteReader();
 
-            reader.Close();
-            conn.Close();
-            MessageBox.Show("Ο νέος καθηγητής έχει καταχωρηθεί στο σύστημα επιτυχώς!!"
-                , "Sign up successful."
-                , MessageBoxButtons.OK
-                , MessageBoxIcon.Information);
+                reader.Close();
+                conn.Close();
+                MessageBox.Show("Ο νέος καθηγητής έχει καταχωρηθεί στο σύστημα επιτυχώς!!"
+                    , "Sign up successful."
+                    , MessageBoxButtons.OK
+                    , MessageBoxIcon.Information);
+            }
+            catch (Exception exception)
+            {
+                // Default error message
+                MessageBox.Show(exception.Message);
+            }
+        }
+
+        /// <summary>
+        /// Σε αυτή την συνάρτηση μέσα γίνεται η σύνδεση με την βάση ετσι ώστε
+        /// να γίνει η διαγραφή κάποιου καθηγητή μέσα από τη βάση
+        /// </summary>
+        internal void deleteProfessor(string id)
+        {
+            try
+            {
+                // Name of database file
+                string fileName = "HomeworkManagement.db";
+                FileInfo f = new FileInfo(fileName);
+                // Full path to it
+                string path = f.FullName;
+
+                // Connection string with relative path
+                string connectionstring = "Data Source=" + path + ";Version=3;";
+
+                SQLiteConnection conn = new SQLiteConnection(connectionstring);
+                conn.Open();
+                string query1 = "Delete from Professor where id = '" + id + "';";
+                SQLiteCommand cmd2 = new SQLiteCommand(query1, conn);
+                SQLiteDataReader reader = cmd2.ExecuteReader();
+
+                reader.Close();
+                conn.Close();
+
+                MessageBox.Show("Ο καθηγητής με id " + id + " έχει πλέον διαγραφεί από το σύστημα!!"
+                    , "Deleting successful."
+                    , MessageBoxButtons.OK
+                    , MessageBoxIcon.Information);
+            }
+            catch (Exception exception)
+            {
+                // Default error message
+                MessageBox.Show(exception.Message);
+            }
         }
     }
 }
