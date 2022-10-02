@@ -34,10 +34,10 @@ namespace Homework
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.dgvboy = new System.Windows.Forms.DataGridView();
+            this.dgv2 = new System.Windows.Forms.DataGridView();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.dgvgirl = new System.Windows.Forms.DataGridView();
+            this.dgv3 = new System.Windows.Forms.DataGridView();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
@@ -48,12 +48,12 @@ namespace Homework
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvboy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvgirl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv1
@@ -116,7 +116,7 @@ namespace Homework
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.dgvboy);
+            this.splitContainer2.Panel1.Controls.Add(this.dgv2);
             this.splitContainer2.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer2.Panel2
@@ -127,14 +127,14 @@ namespace Homework
             this.splitContainer2.SplitterDistance = 80;
             this.splitContainer2.TabIndex = 8;
             // 
-            // dgvboy
+            // dgv2
             // 
-            this.dgvboy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvboy.Location = new System.Drawing.Point(0, 6);
-            this.dgvboy.Name = "dgvboy";
-            this.dgvboy.Size = new System.Drawing.Size(734, 72);
-            this.dgvboy.TabIndex = 4;
-            this.dgvboy.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv2_CellContentClick);
+            this.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv2.Location = new System.Drawing.Point(0, 6);
+            this.dgv2.Name = "dgv2";
+            this.dgv2.Size = new System.Drawing.Size(734, 72);
+            this.dgv2.TabIndex = 4;
+            this.dgv2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv2_CellContentClick);
             // 
             // guna2Button2
             // 
@@ -162,7 +162,7 @@ namespace Homework
             // 
             // splitContainer3.Panel1
             // 
-            this.splitContainer3.Panel1.Controls.Add(this.dgvgirl);
+            this.splitContainer3.Panel1.Controls.Add(this.dgv3);
             this.splitContainer3.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer3.Panel2
@@ -173,13 +173,13 @@ namespace Homework
             this.splitContainer3.SplitterDistance = 80;
             this.splitContainer3.TabIndex = 9;
             // 
-            // dgvgirl
+            // dgv3
             // 
-            this.dgvgirl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvgirl.Location = new System.Drawing.Point(0, 6);
-            this.dgvgirl.Name = "dgvgirl";
-            this.dgvgirl.Size = new System.Drawing.Size(734, 72);
-            this.dgvgirl.TabIndex = 4;
+            this.dgv3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv3.Location = new System.Drawing.Point(0, 6);
+            this.dgv3.Name = "dgv3";
+            this.dgv3.Size = new System.Drawing.Size(734, 72);
+            this.dgv3.TabIndex = 4;
             // 
             // guna2Button3
             // 
@@ -232,12 +232,12 @@ namespace Homework
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvboy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv2)).EndInit();
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvgirl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,9 +248,9 @@ namespace Homework
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.DataGridView dgvboy;
+        private System.Windows.Forms.DataGridView dgv2;
         private System.Windows.Forms.SplitContainer splitContainer3;
-        private System.Windows.Forms.DataGridView dgvgirl;
+        private System.Windows.Forms.DataGridView dgv3;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;

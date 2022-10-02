@@ -211,7 +211,7 @@ namespace Homework
 
             DataSet dSet2 = new DataSet();
             adapter.Fill(dSet2, "wow1");
-            dgvboy.DataSource = dSet2.Tables[0];
+            dgv2.DataSource = dSet2.Tables[0];
 
 
 
@@ -243,7 +243,7 @@ namespace Homework
 
             DataSet dSet1 = new DataSet();
             adapter.Fill(dSet1, "wow22");
-            dgvgirl.DataSource = dSet1.Tables[0];
+            dgv3.DataSource = dSet1.Tables[0];
 
 
 
