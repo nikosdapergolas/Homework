@@ -283,3 +283,4 @@ C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\bin\Debug\Devar
 C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\obj\Debug\Homework.File_uploading_animation.resources
 C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\obj\Debug\Homework.Nikos_test_form.resources
 >>>>>>> 2f02315247f81ad597f912ba06f081808a78ceb2
+S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_modify_professor_credentials.resources
