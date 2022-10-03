@@ -443,14 +443,14 @@
   <ItemGroup>
     <None Include="bin\Debug\pictures\send_email.png" />
     <None Include="bin\Debug\pictures\file_uploading_animation.gif" />
-<<<<<<< HEAD
+
     <None Include="bin\Debug\pictures\pli-did-1.png" />
     <None Include="bin\Debug\pictures\pli-did2-1.png" />
     <None Include="bin\Debug\pictures\pli-did3-1.png" />
     <None Include="bin\Debug\pictures\pli-did4-1.png" />
-=======
+
     <None Include="bin\Debug\pictures\modify.png" />
->>>>>>> e7c9450de78aa91e168109ce7de73942920e8c72
+
     <Content Include="book_app_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
