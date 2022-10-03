@@ -283,6 +283,7 @@ namespace Homework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap pli_did_1 {
             get {
                 object obj = ResourceManager.GetObject("pli-did-1", resourceCulture);
@@ -316,6 +317,11 @@ namespace Homework.Properties {
         internal static System.Drawing.Bitmap pli_did4_1 {
             get {
                 object obj = ResourceManager.GetObject("pli-did4-1", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap modify {
+            get {
+                object obj = ResourceManager.GetObject("modify", resourceCulture);
+>>>>>>> e7c9450de78aa91e168109ce7de73942920e8c72
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

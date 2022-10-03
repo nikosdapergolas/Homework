@@ -29,6 +29,7 @@ namespace Homework
         public static bool kataxorisi_kathigiti_is_active = false;
         public static bool probolh_listas_is_active = false;
         public static bool diagrafi_kathigiti_is_active = false;
+        public static bool enhmerwsh_stixiwn_is_active = false;
 
         // Κάποια Public αντικείμενα των φορμών που ανοίγουν μέσα 
         // στο πάνελ του κυρίως μενού του καθηγητή
@@ -36,6 +37,7 @@ namespace Homework
         Admin_professor_registering apr;
         Admin_show_list_of_professors aslop;
         Admin_delete_professor adp;
+        Admin_modify_professor_credentials ampc;
 
         /// <summary>
         /// Μεσα στο κεντρικό πανελ στο κεντρικό μενού του αδμιν, ανάλογα με ποιό κουμπί πατηθεί
@@ -61,6 +63,11 @@ namespace Homework
                 diagrafi_kathigiti_is_active = false;
                 adp.Close();
             }
+            else if (enhmerwsh_stixiwn_is_active)
+            {
+                enhmerwsh_stixiwn_is_active = false;
+                ampc.Close();
+            }
         }
 
         /// <summary>
@@ -81,6 +88,9 @@ namespace Homework
                 // For guna button 3
                 guna2Button3.BackColor = Color.FromArgb(54, 73, 104);
                 guna2Button3.FillColor = Color.FromArgb(54, 73, 104);
+                // For guna button 4
+                guna2Button4.BackColor = Color.FromArgb(54, 73, 104);
+                guna2Button4.FillColor = Color.FromArgb(54, 73, 104);
             }
             else if (probolh_listas_is_active)
             {
@@ -93,6 +103,9 @@ namespace Homework
                 // For guna button 3
                 guna2Button3.BackColor = Color.FromArgb(54, 73, 104);
                 guna2Button3.FillColor = Color.FromArgb(54, 73, 104);
+                // For guna button 4
+                guna2Button4.BackColor = Color.FromArgb(54, 73, 104);
+                guna2Button4.FillColor = Color.FromArgb(54, 73, 104);
             }
             else if (diagrafi_kathigiti_is_active)
             {
@@ -105,6 +118,24 @@ namespace Homework
                 // For guna button 3
                 guna2Button3.BackColor = Color.FromArgb(108, 67, 67);
                 guna2Button3.FillColor = Color.FromArgb(108, 67, 67);
+                // For guna button 4
+                guna2Button4.BackColor = Color.FromArgb(54, 73, 104);
+                guna2Button4.FillColor = Color.FromArgb(54, 73, 104);
+            }
+            else if (enhmerwsh_stixiwn_is_active)
+            {
+                // For guna button 1
+                guna2Button1.BackColor = Color.FromArgb(54, 73, 104);
+                guna2Button1.FillColor = Color.FromArgb(54, 73, 104);
+                // For guna button 2
+                guna2Button2.BackColor = Color.FromArgb(54, 73, 104);
+                guna2Button2.FillColor = Color.FromArgb(54, 73, 104);
+                // For guna button 3
+                guna2Button3.BackColor = Color.FromArgb(54, 73, 104);
+                guna2Button3.FillColor = Color.FromArgb(54, 73, 104);
+                // For guna button 4
+                guna2Button4.BackColor = Color.FromArgb(108, 67, 67);
+                guna2Button4.FillColor = Color.FromArgb(108, 67, 67);
             }
         }
 
@@ -143,6 +174,7 @@ namespace Homework
                 kataxorisi_kathigiti_is_active = true;
                 probolh_listas_is_active = false;
                 diagrafi_kathigiti_is_active = false;
+                enhmerwsh_stixiwn_is_active = false;
 
                 // Ζωγραφίζω το background του κουμπιού
                 paint_button_background();
@@ -171,6 +203,7 @@ namespace Homework
                 kataxorisi_kathigiti_is_active = false;
                 probolh_listas_is_active = true;
                 diagrafi_kathigiti_is_active = false;
+                enhmerwsh_stixiwn_is_active = false;
 
                 // Ζωγραφίζω το background του κουμπιού
                 paint_button_background();
@@ -199,6 +232,7 @@ namespace Homework
                 kataxorisi_kathigiti_is_active = false;
                 probolh_listas_is_active = false;
                 diagrafi_kathigiti_is_active = true;
+                enhmerwsh_stixiwn_is_active = false;
 
                 // Ζωγραφίζω το background του κουμπιού
                 paint_button_background();
@@ -208,6 +242,31 @@ namespace Homework
                 adp = new Admin_delete_professor(admin) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 this.panel3.Controls.Add(adp);
                 adp.Show();
+            }
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            if (enhmerwsh_stixiwn_is_active == false)
+            {
+                // Κλεινω την τρέχουσα ανοιχτή φόρμα
+                close_current_form_in_panel();
+
+                // Φτιαχνω κάποια flags για το UI
+
+                kataxorisi_kathigiti_is_active = false;
+                probolh_listas_is_active = false;
+                diagrafi_kathigiti_is_active = false;
+                enhmerwsh_stixiwn_is_active = true;
+
+                // Ζωγραφίζω το background του κουμπιού
+                paint_button_background();
+
+                // Άνοιγμα της φόρμας που ασχολείται με τα μαθήματά μου μέσα στο πάνελ3 της Form
+
+                ampc = new Admin_modify_professor_credentials { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                this.panel3.Controls.Add(ampc);
+                ampc.Show();
             }
         }
     }
