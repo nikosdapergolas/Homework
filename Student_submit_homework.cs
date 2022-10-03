@@ -136,6 +136,7 @@ namespace Homework
                     File.Copy(fileToCopy, destinationDirectory + "/" + Path.GetFileName(fileToCopy));
                     // Μήνυμα επιτυχίας
 
+<<<<<<< HEAD
                     MessageBox.Show("Το αρχείο ανέβηκε επιτυχώς!"
                         , "Επιτυχία!"
                         , MessageBoxButtons.OK
@@ -192,6 +193,17 @@ namespace Homework
                     // Default error message
                     MessageBox.Show(ex.Message); conn.Close();
                 }
+=======
+                //File_uploading_animation file_upload = new File_uploading_animation(this);
+                //this.Enabled = false;
+                //file_upload.Show();
+
+                MessageBox.Show("Το αρχείο ανέβηκε επιτυχώς!"
+                    , "Επιτυχία!"
+                    , MessageBoxButtons.OK
+                    , MessageBoxIcon.Information
+                    );
+>>>>>>> 0b02ba50fd1e8a9ef409ed43bb0fb1e327744506
             }
             else 
             {

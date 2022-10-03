@@ -12,13 +12,15 @@ namespace Homework
 {
     public partial class File_uploading_animation : Form
     {
-        Nikos_test_form nikos;
+        //Nikos_test_form nikos;
+        Student_submit_homework ssh;
         int timer_count = 0;
 
-        public File_uploading_animation(Nikos_test_form given)
+        public File_uploading_animation(Student_submit_homework student)
         {
             InitializeComponent();
-            nikos = given;
+            //nikos = given;
+            ssh = student;
         }
 
         private void File_uploading_animation_Load(object sender, EventArgs e)
@@ -33,8 +35,8 @@ namespace Homework
             if(timer_count == 10)
             {
                 this.Close();
-                nikos.Enabled = true;
-                nikos.BringToFront();
+                ssh.Enabled = true;
+                ssh.BringToFront();
             }
         }
     }
