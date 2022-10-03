@@ -63,10 +63,10 @@ namespace Homework
             // 
             this.guna2PictureBox1.Image = global::Homework.Properties.Resources.pli_did_1;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(-3, 33);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(-4, 33);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(414, 323);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(844, 616);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 4;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.Visible = false;
@@ -75,10 +75,10 @@ namespace Homework
             // 
             this.guna2PictureBox2.Image = global::Homework.Properties.Resources.pli_did2_1;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(462, 117);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-4, 33);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(300, 200);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(844, 616);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox2.TabIndex = 5;
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.Visible = false;
@@ -87,25 +87,27 @@ namespace Homework
             // 
             this.guna2PictureBox3.Image = global::Homework.Properties.Resources.pli_did3_1;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(92, 396);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(-4, 33);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(300, 200);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(844, 616);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox3.TabIndex = 6;
             this.guna2PictureBox3.TabStop = false;
             this.guna2PictureBox3.Visible = false;
+            this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
             // 
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.Image = global::Homework.Properties.Resources.pli_did4_1;
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(477, 396);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(-4, 33);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(300, 200);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox4.Size = new System.Drawing.Size(844, 616);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox4.TabIndex = 7;
             this.guna2PictureBox4.TabStop = false;
             this.guna2PictureBox4.Visible = false;
+            this.guna2PictureBox4.Click += new System.EventHandler(this.guna2PictureBox4_Click);
             // 
             // Student_my_lessons
             // 
