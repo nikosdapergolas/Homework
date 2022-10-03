@@ -120,150 +120,162 @@ namespace Homework
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            
-            //*******************************************************************************
-            // Ανάλογα με το ποιός ανεβάζει και τι, μόνο αυτό το σημείο του κώδικα θα αλλάζει
-            string fileName = "homework_that_the_students_upload"; // Το αρχείο στο οποίο αποθηκεύουμε τα "τάδε" πράγματα στο bin/debug
-            //*******************************************************************************
-            FileInfo f = new FileInfo(fileName);
-            // Full path to it
-            destinationDirectory = f.FullName;
-            try
+            if (guna2TextBox1.Text != "" && richTextBox1.Text != "")
             {
-                // Copying the file chosen, to the folder inside bin/debug
-                // that has all the other files like it
-                File.Copy(fileToCopy, destinationDirectory + "/" + Path.GetFileName(fileToCopy));
-                // Μήνυμα επιτυχίας
+                //*******************************************************************************
+                // Ανάλογα με το ποιός ανεβάζει και τι, μόνο αυτό το σημείο του κώδικα θα αλλάζει
+                string fileName = "homework_that_the_students_upload"; // Το αρχείο στο οποίο αποθηκεύουμε τα "τάδε" πράγματα στο bin/debug
+                                                                       //*******************************************************************************
+                FileInfo f = new FileInfo(fileName);
+                // Full path to it
+                destinationDirectory = f.FullName;
+                try
+                {
+                    // Copying the file chosen, to the folder inside bin/debug
+                    // that has all the other files like it
+                    File.Copy(fileToCopy, destinationDirectory + "/" + Path.GetFileName(fileToCopy));
+                    // Μήνυμα επιτυχίας
 
-                MessageBox.Show("Το αρχείο ανέβηκε επιτυχώς!"
-                    , "Επιτυχία!"
-                    , MessageBoxButtons.OK
-                    , MessageBoxIcon.Information
-                    );
+                    MessageBox.Show("Το αρχείο ανέβηκε επιτυχώς!"
+                        , "Επιτυχία!"
+                        , MessageBoxButtons.OK
+                        , MessageBoxIcon.Information
+                        );
+                }
+                catch
+                {
+                    // Exception handling για αν ο χρήστης προσπαθήσει
+                    // να πατήσει 2 φορές το ίδιο αρχείο για να ανέβει
+                    MessageBox.Show("Το αρχείο που προσπαθείτε να ανεβάσετε υπάρχει ήδη.\nΠροσπαθήστε ξανά!"
+                        , "Σφάλμα"
+                        , MessageBoxButtons.OK
+                        , MessageBoxIcon.Error);
+                }
+
+                string fileName1 = "HomeworkManagement.db";
+                FileInfo f1 = new FileInfo(fileName1);
+                // Full path to it
+                string path = f1.FullName;
+
+                // Connection string with relative path
+                string connectionstring = "Data Source=" + path + ";Version=3;";
+
+                SQLiteConnection conn = new SQLiteConnection(connectionstring);
+                conn.Open();
+                test1();
+                string query1 = "select listOfAM from Team where teamName=" + guna2TextBox1.Text + " ;";
+                System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
+                string Who = list_of_team_members;
+                string homework_name = guna2ComboBox2.Text;
+                string upload_date = DateTime.Now.ToString();
+                string file_name = file_to_upload_in_db;
+                Random rnd = new Random();
+                int new_id = rnd.Next();
+                com.CommandText = "Insert into Complete_Homework values ('" + new_id + "','" + homework_name + "','" + upload_date + "','" + Who + "','" + file_name + "');";
+
+
+                try
+                {
+
+                    SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+
+                    conn.Close();
+                    MessageBox.Show("Καταχωρηθηκαν εργασίες ", "ΟΚ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    guna2TextBox1.Clear();
+                    richTextBox1.Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    // Default error message
+                    MessageBox.Show(ex.Message); conn.Close();
+                }
             }
-            catch
+            else 
             {
-                // Exception handling για αν ο χρήστης προσπαθήσει
-                // να πατήσει 2 φορές το ίδιο αρχείο για να ανέβει
-                MessageBox.Show("Το αρχείο που προσπαθείτε να ανεβάσετε υπάρχει ήδη.\nΠροσπαθήστε ξανά!"
-                    , "Σφάλμα"
-                    , MessageBoxButtons.OK
-                    , MessageBoxIcon.Error);
-            }
-
-            string fileName1 = "HomeworkManagement.db";
-            FileInfo f1 = new FileInfo(fileName1);
-            // Full path to it
-            string path = f1.FullName;
-
-            // Connection string with relative path
-            string connectionstring = "Data Source=" + path + ";Version=3;";
-
-            SQLiteConnection conn = new SQLiteConnection(connectionstring);
-            conn.Open();
-            test1();
-            string query1 = "select listOfAM from Team where teamName=" + guna2TextBox1.Text + " ;";
-            System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
-            string Who = list_of_team_members;
-            string homework_name = guna2ComboBox2.Text;
-            string upload_date = DateTime.Now.ToString();
-            string file_name = file_to_upload_in_db;
-            Random rnd = new Random();
-            int new_id = rnd.Next();
-            com.CommandText = "Insert into Complete_Homework values ('"+new_id+"','" + homework_name + "','" + upload_date + "','" + Who + "','" + file_name + "');";
-
-
-            try
-            {
-
-                SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
-                SQLiteDataReader reader = cmd.ExecuteReader();
-
-
-                conn.Close();
-                MessageBox.Show("Καταχωρηθηκαν εργασίες ", "ΟΚ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                guna2TextBox1.Clear();
-                richTextBox1.Clear();
-
-            }
-            catch (Exception ex)
-            {
-                // Default error message
-                MessageBox.Show(ex.Message); conn.Close();
+                MessageBox.Show("Δεν έχετε συμπληρώσει όλα τα παιδία");
             }
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-
-            //*******************************************************************************
-            // Ανάλογα με το ποιός ανεβάζει και τι, μόνο αυτό το σημείο του κώδικα θα αλλάζει
-            string fileName = "homework_that_the_students_upload"; // Το αρχείο στο οποίο αποθηκεύουμε τα "τάδε" πράγματα στο bin/debug
-            //*******************************************************************************
-            FileInfo f = new FileInfo(fileName);
-            // Full path to it
-            destinationDirectory = f.FullName;
-            try
+            if (guna2TextBox1.Text != "" && richTextBox1.Text != "")
             {
-                // Copying the file chosen, to the folder inside bin/debug
-                // that has all the other files like it
-                File.Copy(fileToCopy, destinationDirectory + "/" + Path.GetFileName(fileToCopy));
-                // Μήνυμα επιτυχίας
+                //*******************************************************************************
+                // Ανάλογα με το ποιός ανεβάζει και τι, μόνο αυτό το σημείο του κώδικα θα αλλάζει
+                string fileName = "homework_that_the_students_upload"; // Το αρχείο στο οποίο αποθηκεύουμε τα "τάδε" πράγματα στο bin/debug
+                                                                       //*******************************************************************************
+                FileInfo f = new FileInfo(fileName);
+                // Full path to it
+                destinationDirectory = f.FullName;
+                try
+                {
+                    // Copying the file chosen, to the folder inside bin/debug
+                    // that has all the other files like it
+                    File.Copy(fileToCopy, destinationDirectory + "/" + Path.GetFileName(fileToCopy));
+                    // Μήνυμα επιτυχίας
 
-                MessageBox.Show("Το αρχείο ανέβηκε επιτυχώς!"
-                    , "Επιτυχία!"
-                    , MessageBoxButtons.OK
-                    , MessageBoxIcon.Information
-                    );
+                    MessageBox.Show("Το αρχείο ανέβηκε επιτυχώς!"
+                        , "Επιτυχία!"
+                        , MessageBoxButtons.OK
+                        , MessageBoxIcon.Information
+                        );
+                }
+                catch
+                {
+                    // Exception handling για αν ο χρήστης προσπαθήσει
+                    // να πατήσει 2 φορές το ίδιο αρχείο για να ανέβει
+                    MessageBox.Show("Το αρχείο που προσπαθείτε να ανεβάσετε υπάρχει ήδη.\nΠροσπαθήστε ξανά!"
+                        , "Σφάλμα"
+                        , MessageBoxButtons.OK
+                        , MessageBoxIcon.Error);
+                }
+
+
+                string fileName1 = "HomeworkManagement.db";
+                FileInfo f1 = new FileInfo(fileName1);
+                // Full path to it
+                string path = f1.FullName;
+
+                // Connection string with relative path
+                string connectionstring = "Data Source=" + path + ";Version=3;";
+
+                SQLiteConnection conn = new SQLiteConnection(connectionstring);
+                conn.Open();
+                System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
+                string Who = guna2TextBox2.Text;
+                string homework_name = guna2ComboBox2.Text;
+                string upload_date = DateTime.Now.ToString();
+                string file_name = file_to_upload_in_db;
+                Random rnd = new Random();
+                int new_id = rnd.Next();
+                com.CommandText = "Insert into Complete_Homework values ('" + new_id + "','" + homework_name + "','" + upload_date + "','" + Who + "','" + file_name + "');";
+
+
+                try
+                {
+
+                    SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+
+                    conn.Close();
+                    MessageBox.Show("Καταχωρηθηκαν εργασίες ", "ΟΚ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    richTextBox2.Clear();
+                    guna2TextBox2.Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    // Default error message
+                    MessageBox.Show(ex.Message); conn.Close();
+                }
             }
-            catch
+            else 
             {
-                // Exception handling για αν ο χρήστης προσπαθήσει
-                // να πατήσει 2 φορές το ίδιο αρχείο για να ανέβει
-                MessageBox.Show("Το αρχείο που προσπαθείτε να ανεβάσετε υπάρχει ήδη.\nΠροσπαθήστε ξανά!"
-                    , "Σφάλμα"
-                    , MessageBoxButtons.OK
-                    , MessageBoxIcon.Error);
-            }
-            
-
-            string fileName1 = "HomeworkManagement.db";
-            FileInfo f1 = new FileInfo(fileName1);
-            // Full path to it
-            string path = f1.FullName;
-
-            // Connection string with relative path
-            string connectionstring = "Data Source=" + path + ";Version=3;";
-
-            SQLiteConnection conn = new SQLiteConnection(connectionstring);
-            conn.Open();
-            System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
-            string Who = guna2TextBox2.Text;
-            string  homework_name= guna2ComboBox2.Text;
-            string  upload_date= DateTime.Now.ToString();
-            string  file_name= file_to_upload_in_db;
-            Random rnd = new Random();
-            int new_id = rnd.Next();
-            com.CommandText = "Insert into Complete_Homework values ('"+new_id+"','" + homework_name + "','" + upload_date + "','" + Who + "','" + file_name + "');";
-
-
-            try
-            {
-
-                SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
-                SQLiteDataReader reader = cmd.ExecuteReader();
-
-
-                conn.Close();
-                MessageBox.Show("Καταχωρηθηκαν εργασίες ", "ΟΚ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                richTextBox2.Clear();
-                guna2TextBox2.Clear();
-
-            }
-            catch (Exception ex)
-            {
-                // Default error message
-                MessageBox.Show(ex.Message); conn.Close();
+                MessageBox.Show("Δεν έχετε συμπληρώσει όλα τα παιδία");
             }
 
         }
