@@ -63,6 +63,7 @@ namespace Homework
             // guna2Panel1
             // 
             this.guna2Panel1.AllowDrop = true;
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Location = new System.Drawing.Point(562, 56);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -223,6 +224,7 @@ namespace Homework
             // guna2Panel2
             // 
             this.guna2Panel2.AllowDrop = true;
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.guna2Panel2.Controls.Add(this.label6);
             this.guna2Panel2.Location = new System.Drawing.Point(562, 429);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -252,7 +254,7 @@ namespace Homework
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.Location = new System.Drawing.Point(12, 150);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(200, 36);
             this.guna2ComboBox1.TabIndex = 14;
             // 
             // guna2ComboBox2

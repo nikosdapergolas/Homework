@@ -14,6 +14,7 @@ namespace Homework
 {
     public partial class Student_submit_homework : Form
     {
+        string list_of_team_members;
         string file_to_upload_in_db;
         string bob;
         string destinationDirectory;
@@ -79,6 +80,43 @@ namespace Homework
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
         }
+        void test1() 
+        {
+            // Name of database file
+            string fileName = "HomeworkManagement.db";
+            FileInfo f = new FileInfo(fileName);
+            // Full path to it
+            string path = f.FullName;
+
+            // Connection string with relative path
+            string connectionstring = "Data Source=" + path + ";Version=3;";
+
+            SQLiteConnection conn = new SQLiteConnection(connectionstring);
+            conn.Open();
+            string query1 = "select listOfAM from Team where teamName='" + guna2TextBox1.Text + "' ;";
+            SQLiteCommand cmd = new SQLiteCommand(query1, conn);
+            SQLiteDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                // Περνάω στο public αντικείμενο Student τις τιμές που αντιστοιχούν σε αυτόν στη βάση
+                // Σύμφωνα με το username και το password του
+
+
+
+                list_of_team_members = reader.GetString(0);
+                
+
+                // Πέρασμα στην καινούρια φόρμα με το προφίλ του μαθητή αυτού
+            }
+            else
+            {
+                MessageBox.Show("Το όνομα της όμαδας δεν υπάρχει");
+            }
+            reader.Close();
+            conn.Close();
+            conn.Dispose();
+        }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -123,15 +161,36 @@ namespace Homework
 
             SQLiteConnection conn = new SQLiteConnection(connectionstring);
             conn.Open();
+            test1();
+            string query1 = "select listOfAM from Team where teamName=" + guna2TextBox1.Text + " ;";
             System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
-            //string homeworkid = IDtxt.Text;
-            //string nameofHW = hwname.Text;
-            //string deadline = deadliner.Text;
-            //string file_name = bob;
-            //string visibility = visi.Text;
-            //string subject1 = subject.Text;
-            //string max_grade = maxvathmos.Text;
-            //string yearboy = class_name.Text;
+            string Who = list_of_team_members;
+            string homework_name = guna2ComboBox2.Text;
+            string upload_date = DateTime.Now.ToString();
+            string file_name = file_to_upload_in_db;
+            Random rnd = new Random();
+            int new_id = rnd.Next();
+            com.CommandText = "Insert into Complete_Homework values ('"+new_id+"','" + homework_name + "','" + upload_date + "','" + Who + "','" + file_name + "');";
+
+
+            try
+            {
+
+                SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
+                SQLiteDataReader reader = cmd.ExecuteReader();
+
+
+                conn.Close();
+                MessageBox.Show("Καταχωρηθηκαν εργασίες ", "ΟΚ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                guna2TextBox1.Clear();
+                richTextBox1.Clear();
+
+            }
+            catch (Exception ex)
+            {
+                // Default error message
+                MessageBox.Show(ex.Message); conn.Close();
+            }
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -183,7 +242,30 @@ namespace Homework
             string  homework_name= guna2ComboBox2.Text;
             string  upload_date= DateTime.Now.ToString();
             string  file_name= file_to_upload_in_db;
-            
+            Random rnd = new Random();
+            int new_id = rnd.Next();
+            com.CommandText = "Insert into Complete_Homework values ('"+new_id+"','" + homework_name + "','" + upload_date + "','" + Who + "','" + file_name + "');";
+
+
+            try
+            {
+
+                SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
+                SQLiteDataReader reader = cmd.ExecuteReader();
+
+
+                conn.Close();
+                MessageBox.Show("Καταχωρηθηκαν εργασίες ", "ΟΚ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                richTextBox2.Clear();
+                guna2TextBox2.Clear();
+
+            }
+            catch (Exception ex)
+            {
+                // Default error message
+                MessageBox.Show(ex.Message); conn.Close();
+            }
+
         }
 
         private void Student_submit_homework_Load(object sender, EventArgs e)
@@ -212,6 +294,11 @@ namespace Homework
             guna2ComboBox1.DisplayMember = "nameofhw";
             DataTable dt = new DataTable();
             conn.Close();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

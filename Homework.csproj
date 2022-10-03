@@ -434,6 +434,10 @@
   <ItemGroup>
     <None Include="bin\Debug\pictures\send_email.png" />
     <None Include="bin\Debug\pictures\file_uploading_animation.gif" />
+    <None Include="bin\Debug\pictures\pli-did-1.png" />
+    <None Include="bin\Debug\pictures\pli-did2-1.png" />
+    <None Include="bin\Debug\pictures\pli-did3-1.png" />
+    <None Include="bin\Debug\pictures\pli-did4-1.png" />
     <Content Include="book_app_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

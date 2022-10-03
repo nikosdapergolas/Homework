@@ -78,7 +78,6 @@ namespace Homework
                 student.Name = reader.GetString(1);
                 student.Surname = reader.GetString(2);
                 student.Email = reader.GetString(3);
-
                 // Μηνυμα επιτυχίας και χαράς
                 // και καλώ τη δευτερη φόρμα
                 MessageBox.Show("Καλωσόρισες " + reader.GetString(1) + " " + reader.GetString(2) + "!! :)", "Το login ήταν επιτυχές!", MessageBoxButtons.OK, MessageBoxIcon.Information);
