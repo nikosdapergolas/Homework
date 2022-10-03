@@ -242,12 +242,7 @@ namespace Homework
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Nikos_test_form nikos = new Nikos_test_form();
-            this.Hide();
-            nikos.Show();
-        }
+        
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {

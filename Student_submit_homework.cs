@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -118,10 +119,19 @@ namespace Homework
             conn.Dispose();
         }
 
+        void run_animation(Student_submit_homework ssh)
+        {
+            File_uploading_animation file_upload = new File_uploading_animation(this);
+            ssh.Enabled = false;
+            file_upload.Show();
+        }
+
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             if (guna2TextBox1.Text != "" && richTextBox1.Text != "")
             {
+                
+
                 //*******************************************************************************
                 // Ανάλογα με το ποιός ανεβάζει και τι, μόνο αυτό το σημείο του κώδικα θα αλλάζει
                 string fileName = "homework_that_the_students_upload"; // Το αρχείο στο οποίο αποθηκεύουμε τα "τάδε" πράγματα στο bin/debug
@@ -136,7 +146,7 @@ namespace Homework
                     File.Copy(fileToCopy, destinationDirectory + "/" + Path.GetFileName(fileToCopy));
                     // Μήνυμα επιτυχίας
 
-<<<<<<< HEAD
+
                     MessageBox.Show("Το αρχείο ανέβηκε επιτυχώς!"
                         , "Επιτυχία!"
                         , MessageBoxButtons.OK
@@ -193,17 +203,13 @@ namespace Homework
                     // Default error message
                     MessageBox.Show(ex.Message); conn.Close();
                 }
-=======
-                //File_uploading_animation file_upload = new File_uploading_animation(this);
-                //this.Enabled = false;
-                //file_upload.Show();
+
 
                 MessageBox.Show("Το αρχείο ανέβηκε επιτυχώς!"
                     , "Επιτυχία!"
                     , MessageBoxButtons.OK
                     , MessageBoxIcon.Information
                     );
->>>>>>> 0b02ba50fd1e8a9ef409ed43bb0fb1e327744506
             }
             else 
             {
