@@ -135,6 +135,10 @@ namespace Homework
                 File.Copy(fileToCopy, destinationDirectory + "/" + Path.GetFileName(fileToCopy));
                 // Μήνυμα επιτυχίας
 
+                //File_uploading_animation file_upload = new File_uploading_animation(this);
+                //this.Enabled = false;
+                //file_upload.Show();
+
                 MessageBox.Show("Το αρχείο ανέβηκε επιτυχώς!"
                     , "Επιτυχία!"
                     , MessageBoxButtons.OK
