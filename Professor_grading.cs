@@ -65,15 +65,14 @@ namespace Homework
             SQLiteConnection conn = new SQLiteConnection(connectionstring);
             conn.Open();
             System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
-            int hwid = Convert.ToInt32(complete_id.Value); 
+           
 
 
 
 
 
 
-
-            com.CommandText = "Delete from Complete_Homework where homework_id='"+hwid+"';";
+            com.CommandText = "Delete from Complete_Homework where homework_id='"+guna2TextBox1.Text+"';";
 
 
             try
