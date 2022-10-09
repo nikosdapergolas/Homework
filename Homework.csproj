@@ -186,12 +186,6 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nikos_test_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nikos_test_form.Designer.cs">
-      <DependentUpon>Nikos_test_form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="Points.cs" />
     <Compile Include="Professor.cs" />
@@ -288,9 +282,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Nikos_test_form.resx">
-      <DependentUpon>Nikos_test_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Professor_current_homework.resx">
       <DependentUpon>Professor_current_homework.cs</DependentUpon>
@@ -443,14 +434,11 @@
   <ItemGroup>
     <None Include="bin\Debug\pictures\send_email.png" />
     <None Include="bin\Debug\pictures\file_uploading_animation.gif" />
-
     <None Include="bin\Debug\pictures\pli-did-1.png" />
     <None Include="bin\Debug\pictures\pli-did2-1.png" />
     <None Include="bin\Debug\pictures\pli-did3-1.png" />
     <None Include="bin\Debug\pictures\pli-did4-1.png" />
-
     <None Include="bin\Debug\pictures\modify.png" />
-
     <Content Include="book_app_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

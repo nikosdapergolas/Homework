@@ -181,7 +181,7 @@ namespace Homework
 
                 // Άνοιγμα της φόρμας που ασχολείται με τα μαθήματά μου μέσα στο πάνελ της Form1
 
-                ssch = new Student_see_current_homework() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                ssch = new Student_see_current_homework(student) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 this.panel2.Controls.Add(ssch);
                 ssch.Show();
             }
