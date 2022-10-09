@@ -104,53 +104,54 @@ namespace Homework
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             string fileName = "HomeworkManagement.db";
-            FileInfo f = new FileInfo(fileName);
-            // Full path to it
-            string path = f.FullName;
+                FileInfo f = new FileInfo(fileName);
+                // Full path to it
+                string path = f.FullName;
 
-            // Connection string with relative path
-            string connectionstring = "Data Source=" + path + ";Version=3;";
+                // Connection string with relative path
+                string connectionstring = "Data Source=" + path + ";Version=3;";
 
-            SQLiteConnection conn = new SQLiteConnection(connectionstring);
-            conn.Open();
-            string inp = guna2TextBox1.Text;
-            System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
-
-            com.CommandText = "update Homework_Board set visibility='yes' where homeworkID ='" + inp + "'";
-            com.ExecuteNonQuery();
-            SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
-            SQLiteDataReader reader = cmd.ExecuteReader();
-
-            if (reader.Read())
+                SQLiteConnection conn = new SQLiteConnection(connectionstring);
+                conn.Open();
+            try
             {
-                MessageBox.Show("ok", "ενεργεια εγινε", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // Περνάω στο public αντικείμενο Student τις τιμές που αντιστοιχούν σε αυτόν στη βάση
-                // Σύμφωνα με το username και το password του
                 
+                
+            
+                //(int)numnum.Value;
+                System.Data.SQLite.SQLiteCommand com = new System.Data.SQLite.SQLiteCommand(conn);
+
+                com.CommandText = "update Homework_Board set visibility='yes' where homeworkID ='"+guna2TextBox1.Text+"';" ;
+            
+                SQLiteCommand cmd = new SQLiteCommand(com.CommandText, conn);
+                SQLiteDataReader reader = cmd.ExecuteReader();
+                string query2 = "select * from Homework_Board ";
+
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(query2, conn);
+
+                DataSet dSet = new DataSet();
+                adapter.Fill(dSet, "wow2");
+                dgv2.DataSource = dSet.Tables[0];
+                DataTable dt = new DataTable();
+
+
+
+
+                conn.Close();
+
             }
-            else
+            catch(Exception ex)
             {
-                MessageBox.Show("Το id δεν βρεθηκε", "ERROR", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message);
+                conn.Close();
+
             }
+            
 
 
 
 
-            string query2 = "select * from Homework_Board where visibility='yes';";
-
-            SQLiteDataAdapter adapter = new SQLiteDataAdapter(query2, conn);
-
-            DataSet dSet = new DataSet();
-            adapter.Fill(dSet, "wow");
-            dgv2.DataSource = dSet.Tables[0];
-            DataTable dt = new DataTable();
-
-
-
-
-            conn.Close();
-
+           
 
 
         }

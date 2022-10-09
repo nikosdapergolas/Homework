@@ -259,9 +259,9 @@ namespace Homework
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(3, 43);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(188, 21);
+            this.label16.Size = new System.Drawing.Size(181, 21);
             this.label16.TabIndex = 12;
-            this.label16.Text = "Αριθμός Τάξης(\'1\',\'2\'...)";
+            this.label16.Text = "ΑριθμόςΈτους\'1\',\'2\'...)";
             // 
             // guna2Panel2
             // 
@@ -519,9 +519,9 @@ namespace Homework
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(1, 146);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(123, 21);
+            this.label8.Size = new System.Drawing.Size(126, 21);
             this.label8.TabIndex = 4;
-            this.label8.Text = "Ορισμός Τάξης";
+            this.label8.Text = "Ορισμός Έτους";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
