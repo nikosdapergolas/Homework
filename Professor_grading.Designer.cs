@@ -57,12 +57,11 @@ namespace Homework
             this.creator_corect = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.complete_id = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.correct_id)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complete_id)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -403,23 +402,31 @@ namespace Homework
             this.guna2Button1.Text = "remove from complete board";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // complete_id
+            // guna2TextBox1
             // 
-            this.complete_id.BackColor = System.Drawing.Color.Transparent;
-            this.complete_id.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.complete_id.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.complete_id.Location = new System.Drawing.Point(1, 108);
-            this.complete_id.Name = "complete_id";
-            this.complete_id.Size = new System.Drawing.Size(231, 45);
-            this.complete_id.TabIndex = 14;
-            this.complete_id.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(117)))), ((int)(((byte)(82)))));
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(6, 108);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(230, 45);
+            this.guna2TextBox1.TabIndex = 26;
             // 
             // Professor_grading
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(158)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(800, 650);
-            this.Controls.Add(this.complete_id);
+            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2DataGridView1);
@@ -435,7 +442,6 @@ namespace Homework
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.correct_id)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.complete_id)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -458,10 +464,10 @@ namespace Homework
         private Guna.UI2.WinForms.Guna2TextBox creator_corect;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2NumericUpDown complete_id;
         private Guna.UI2.WinForms.Guna2NumericUpDown correct_id;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }

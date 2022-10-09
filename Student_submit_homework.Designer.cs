@@ -197,6 +197,7 @@ namespace Homework
             this.guna2Button3.Size = new System.Drawing.Size(168, 50);
             this.guna2Button3.TabIndex = 13;
             this.guna2Button3.Text = "Επιλογή αρχείου";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button4
             // 
