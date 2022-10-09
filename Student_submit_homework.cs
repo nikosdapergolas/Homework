@@ -136,7 +136,7 @@ namespace Homework
                     File.Copy(fileToCopy, destinationDirectory + "/" + Path.GetFileName(fileToCopy));
                     // Μήνυμα επιτυχίας
 
-<<<<<<< HEAD
+
                     MessageBox.Show("Το αρχείο ανέβηκε επιτυχώς!"
                         , "Επιτυχία!"
                         , MessageBoxButtons.OK
@@ -193,7 +193,7 @@ namespace Homework
                     // Default error message
                     MessageBox.Show(ex.Message); conn.Close();
                 }
-=======
+
                 //File_uploading_animation file_upload = new File_uploading_animation(this);
                 //this.Enabled = false;
                 //file_upload.Show();
@@ -203,7 +203,7 @@ namespace Homework
                     , MessageBoxButtons.OK
                     , MessageBoxIcon.Information
                     );
->>>>>>> 0b02ba50fd1e8a9ef409ed43bb0fb1e327744506
+
             }
             else 
             {
@@ -213,7 +213,7 @@ namespace Homework
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            if (guna2TextBox1.Text != "" && richTextBox1.Text != "")
+            if (guna2TextBox2.Text != "" && richTextBox2.Text != "")
             {
                 //*******************************************************************************
                 // Ανάλογα με το ποιός ανεβάζει και τι, μόνο αυτό το σημείο του κώδικα θα αλλάζει
@@ -323,6 +323,27 @@ namespace Homework
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Multiselect = false; // deny user to upload more than one file at a time
+            if (dialog.ShowDialog() == DialogResult.OK) // if user clicked OK
+            {
+                bob = dialog.FileName;
+                // Get path of file
+                String path = dialog.FileName;
+                fileToCopy = path;
+
+                string filenamex = Path.GetFileName(bob);
+                bob = filenamex;
+
+                // Change the file shown in the rich textbox
+                richTextBox2.Text = path;
+                file_to_upload_in_db = Path.GetFileName(path);
+
+            }
         }
     }
 }
