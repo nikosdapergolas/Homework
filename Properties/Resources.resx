@@ -118,50 +118,77 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="book_app_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\book_app_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="go_back_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\go_back_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="register_picture_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\register_picture_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="giveHomework" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\giveHomework.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="homework_yellow_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\homework_yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="go_back_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\go_back_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="classroom_beige" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\classroom_beige.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="classrom_filled_yelow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\classrom_filled_yelow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="go_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\pictures\go_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="grades" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\grades.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="go_back_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\go_back_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="homework_correct" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\homework_correct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exit_admin_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\exit_admin_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="go_back_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\go_back_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="homework_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\pictures\homework_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="professor_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\professor_list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="register_picture_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\register_picture_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="homework_yellow_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\homework_yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="send_email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\send_email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="homework_correct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\homework_correct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_uploading_animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\file_uploading_animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giveHomework" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\giveHomework.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="classrom4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\pictures\classrom4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_beige2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\exit_beige2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_professor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\delete_professor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book_app_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\book_app_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="homework_picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\homework_picture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="team" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\team.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grades" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\grades.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="classroom_beige" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\classroom_beige.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="set_homework" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\pictures\set_homework.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,34 +196,22 @@
   <data name="homework_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\pictures\homework_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit_beige2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\exit_beige2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exit_admin_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\exit_admin_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="classrom_filled_yelow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\classrom_filled_yelow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pli-did-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\pli-did-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="homework_picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\homework_picture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pli-did2-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\pli-did2-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete_professor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\delete_professor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pli-did3-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\pli-did3-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="send_email" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\send_email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pli-did4-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\pli-did4-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="team" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\team.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="list" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="professor_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\professor_list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="file_uploading_animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pictures\file_uploading_animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="modify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\pictures\modify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

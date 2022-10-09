@@ -79,6 +79,10 @@ namespace Homework
                 student.Surname = reader.GetString(2);
                 student.Email = reader.GetString(3);
 
+
+                student.Year = reader.GetString(6);
+
+
                 // Μηνυμα επιτυχίας και χαράς
                 // και καλώ τη δευτερη φόρμα
                 MessageBox.Show("Καλωσόρισες " + reader.GetString(1) + " " + reader.GetString(2) + "!! :)", "Το login ήταν επιτυχές!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -238,12 +242,7 @@ namespace Homework
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Nikos_test_form nikos = new Nikos_test_form();
-            this.Hide();
-            nikos.Show();
-        }
+        
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {

@@ -79,6 +79,7 @@ namespace Homework
                                 student.Name = reader.GetString(1);
                                 student.Surname = reader.GetString(2);
                                 student.Email = reader.GetString(3);
+                                student.Year = reader.GetString(6);
 
                                 // Γέννηση κάποιου καινούριου τυχαίου κωδικού
 

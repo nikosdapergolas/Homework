@@ -31,9 +31,9 @@ namespace Homework
         {
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -45,6 +45,8 @@ namespace Homework
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -60,12 +62,24 @@ namespace Homework
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.AllowDrop = true;
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Location = new System.Drawing.Point(562, 56);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(249, 130);
             this.guna2Panel1.TabIndex = 1;
             this.guna2Panel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.guna2Panel1_DragDrop);
+            this.guna2Panel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.guna2Panel1_DragEnter);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(58, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(144, 21);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Σύρετε εδώ αρχεία";
             // 
             // label2
             // 
@@ -83,15 +97,6 @@ namespace Homework
             this.richTextBox1.Size = new System.Drawing.Size(249, 50);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(58, 56);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 21);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Σύρετε εδώ αρχεία";
             // 
             // guna2TextBox1
             // 
@@ -125,6 +130,7 @@ namespace Homework
             this.guna2Button1.Size = new System.Drawing.Size(168, 50);
             this.guna2Button1.TabIndex = 5;
             this.guna2Button1.Text = "Μεταφόρτωση";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
             // 
@@ -205,6 +211,7 @@ namespace Homework
             this.guna2Button4.Size = new System.Drawing.Size(168, 50);
             this.guna2Button4.TabIndex = 12;
             this.guna2Button4.Text = "Μεταφόρτωση";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // richTextBox2
             // 
@@ -216,11 +223,15 @@ namespace Homework
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.AllowDrop = true;
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.guna2Panel2.Controls.Add(this.label6);
             this.guna2Panel2.Location = new System.Drawing.Point(562, 429);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(249, 130);
             this.guna2Panel2.TabIndex = 10;
+            this.guna2Panel2.DragDrop += new System.Windows.Forms.DragEventHandler(this.guna2Panel2_DragDrop);
+            this.guna2Panel2.DragEnter += new System.Windows.Forms.DragEventHandler(this.guna2Panel2_DragEnter);
             // 
             // label6
             // 
@@ -231,11 +242,43 @@ namespace Homework
             this.label6.TabIndex = 0;
             this.label6.Text = "Σύρετε εδώ αρχεία";
             // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(12, 150);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(200, 36);
+            this.guna2ComboBox1.TabIndex = 14;
+            // 
+            // guna2ComboBox2
+            // 
+            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.Location = new System.Drawing.Point(12, 523);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.Size = new System.Drawing.Size(200, 36);
+            this.guna2ComboBox2.TabIndex = 15;
+            // 
             // Student_submit_homework
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(823, 650);
+            this.Controls.Add(this.guna2ComboBox2);
+            this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.richTextBox2);
@@ -255,6 +298,7 @@ namespace Homework
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Student_submit_homework";
             this.Text = "Student_submit_homework";
+            this.Load += new System.EventHandler(this.Student_submit_homework_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
@@ -282,5 +326,7 @@ namespace Homework
         private System.Windows.Forms.RichTextBox richTextBox2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
     }
 }
