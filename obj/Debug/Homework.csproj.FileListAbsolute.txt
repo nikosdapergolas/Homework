@@ -285,3 +285,23 @@ C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\obj\Debug\Homew
 >>>>>>> 2f02315247f81ad597f912ba06f081808a78ceb2
 S:\visual_studio_projects\C#\Homework\obj\Debug\Homework.Admin_modify_professor_credentials.resources
 C:\Users\Κίμων Χατζόπουλος\source\repos\Homework\obj\Debug\Homework.Admin_modify_professor_credentials.resources
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.Admin.Directory.directory_v1.dll
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.Auth.dll
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.Core.dll
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.dll
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Devart.Data.xml
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Devart.Data.SQLite.xml
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.pdb
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.xml
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.Admin.Directory.directory_v1.pdb
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.Admin.Directory.directory_v1.xml
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.Auth.xml
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.Core.pdb
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.Core.xml
+C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Νικολέτα\source\repos\Homework\obj\Debug\Homework.Admin_modify_professor_credentials.resources
+C:\Users\Νικολέτα\source\repos\Homework\obj\Debug\Homework.File_uploading_animation.resources
