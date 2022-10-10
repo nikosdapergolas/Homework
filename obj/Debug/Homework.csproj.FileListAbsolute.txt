@@ -305,3 +305,4 @@ C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Google.Apis.Core.xml
 C:\Users\Νικολέτα\source\repos\Homework\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Νικολέτα\source\repos\Homework\obj\Debug\Homework.Admin_modify_professor_credentials.resources
 C:\Users\Νικολέτα\source\repos\Homework\obj\Debug\Homework.File_uploading_animation.resources
+C:\Users\alexm\source\repos\Homework\obj\Debug\Homework.Admin_modify_professor_credentials.resources

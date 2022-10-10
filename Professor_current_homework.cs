@@ -82,7 +82,7 @@ namespace Homework
             SQLiteConnection conn = new SQLiteConnection(connectionstring);
             conn.Open();
 
-            string query1 = "select * from Homework_Board ;";
+            string query1 = "select * from Homework_Board where visibility ='no';";
             SQLiteDataAdapter adapter = new SQLiteDataAdapter(query1, conn);
 
             DataSet dSet = new DataSet();
